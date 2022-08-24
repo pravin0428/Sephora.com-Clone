@@ -1,37 +1,36 @@
-import { Image, HStack, Box, Link, Icon, Input, Button, Container, Stack } from "@chakra-ui/react";
+import { Link ,  Image, HStack, Box, Input, Button, Container, Stack, Heading , Text} from "@chakra-ui/react";
  
-import React from "react";
-
-let arrOFMainImage = [
-    {
-      img : "https://logan.nnnow.com/content/dam/nnnow-project/30-june-2022/se/SC_Topbanner_ExclusivelyatSephoradesktop.jpg"
-    },
+// let arrOFMainImage = [
+//     {
+//       img : "https://logan.nnnow.com/content/dam/nnnow-project/30-june-2022/se/SC_Topbanner_ExclusivelyatSephoradesktop.jpg"
+//     },
  
-    {
-        img : "https://logan.nnnow.com/content/dam/nnnow-project/17-aug-2022/Benefit_Homepagebanner_Colormobile.jpg"
-      },
-      {
-        img : "https://logan.nnnow.com/content/dam/nnnow-project/17-aug-2022/ABH_Homepagebannermobile(1).jpg"
-      },
-      {
-        img : "https://logan.nnnow.com/content/dam/nnnow-project/09-aug-2022/se/Esteelauder_Homepagebannerdesktop.jpg"
-      },
+//     {
+//         img : "https://logan.nnnow.com/content/dam/nnnow-project/17-aug-2022/Benefit_Homepagebanner_Colormobile.jpg"
+//       },
+//       {
+//         img : "https://logan.nnnow.com/content/dam/nnnow-project/17-aug-2022/ABH_Homepagebannermobile(1).jpg"
+//       },
+//       {
+//         img : "https://logan.nnnow.com/content/dam/nnnow-project/09-aug-2022/se/Esteelauder_Homepagebannerdesktop.jpg"
+//       },
   
-      {
-        img : "https://logan.nnnow.com/content/dam/nnnow-project/16-aug-2022/se/Clarins_Topbannermobile.jpg"
-      },
-      {
-       img : "https://logan.nnnow.com/content/dam/nnnow-project/15-july-2022/Hanzdefuko_Topbannerdesktop.jpg"
-      },
-      {
-        img : "https://logan.nnnow.com/content/dam/nnnow-project/06-july-2022/Sephora_HomepageBannermobile.jpg"
-      }
+//       {
+//         img : "https://logan.nnnow.com/content/dam/nnnow-project/16-aug-2022/se/Clarins_Topbannermobile.jpg"
+//       },
+//       {
+//        img : "https://logan.nnnow.com/content/dam/nnnow-project/15-july-2022/Hanzdefuko_Topbannerdesktop.jpg"
+//       },
+//       {
+//         img : "https://logan.nnnow.com/content/dam/nnnow-project/06-july-2022/Sephora_HomepageBannermobile.jpg"
+//       }
        
-]
+// ]
 
 
 function Navbar() {
 
+ 
 
 
   return (
@@ -53,10 +52,10 @@ function Navbar() {
           />
         </Box>
         <Box>
-          <Link to="#"> Store Locator</Link>
+          <Link to=""> Store Locator</Link>
         </Box>
         <Box>
-          <Link to="#">
+          <Link to="">
             Get 10% OFF on your first purchase. Use Code: BEAUTY10
           </Link>
         </Box>
@@ -69,13 +68,13 @@ function Navbar() {
           flexWrap="wrap"
         >
           <Box>
-            <Link to="#">Get App</Link>
+            <Link to="">Get App</Link>
           </Box>
           <Box>
-            <Link to="#">Track</Link>
+            <Link to="">Track</Link>
           </Box>
           <Box>
-            <Link to="#">Loyalty</Link>
+            <Link to="">Loyalty</Link>
           </Box>
         </Box>
       </HStack>
@@ -92,8 +91,10 @@ function Navbar() {
           <Input  placeholder="Search" type="text" width="300px"   />
         </Box>
         <Box>
-          <Image src="https://cdn07.nnnow.com/web-images/master/navtree_metaData/59b2657be4b0e6b6e16a9180/1548053082431/se.png" alt="nameOFweb" width="223px"
+        <Link href="/">
+        <Image src="https://cdn07.nnnow.com/web-images/master/navtree_metaData/59b2657be4b0e6b6e16a9180/1548053082431/se.png" alt="nameOFweb" width="223px"
             height="100px" />
+        </Link>
         </Box>
 
         <Box
@@ -105,13 +106,13 @@ function Navbar() {
          marginTop="40px"
         >
           <Box>
-            <Link to="#">cart</Link>
+            <Link to="">cart</Link>
           </Box>
           <Box>
-            <Link to="#">love</Link>
+            <Link to="x">love</Link>
           </Box>
           <Box>
-            <Link to="#">Login</Link>
+            <Link href="/login">Login</Link>
           </Box>
         </Box>
  
@@ -130,30 +131,8 @@ function Navbar() {
    </Box>
 
  
- {/* 4rt row */}
+ 
 
-{/* it shold be in home comp  */}
-
- {/* <Box > */}
-     {/* {arrOFMainImage?.map((elem)=>(
-     <Image src={elem.img} />
-    ))} */}
-   <Stack> 
-    <Image src="https://logan.nnnow.com/content/dam/nnnow-project/30-june-2022/se/SC_Topbanner_ExclusivelyatSephoradesktop.jpg" />
-    </Stack>
- {/* </Box> */}
-
- {/* fifth row */}
-
- <Box>
-    <button>STEALS & DEALS</button>
-    <button>BEAUTY MINIS UNDER ₹999 </button>
-    <button></button>
-    <button></button>
-    <button></button>
-    <button></button>
- </Box>
-  
     </>
   );
 }

@@ -1,0 +1,65 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "projectRow11" : [
+    {
+      "img" : "https://cdn09.nnnow.com/web-images/medium/styles/NAG35MWAZB5/1603956012732/1.jpg",
+      "tag":"BESTSELLER",
+      "brand" : "OLAPLEX",
+      "title" : "N°4 Bond Maintenance Shampoo",
+      "price" : "2,950"
+    },
+    {
+      "img" : "https://cdn10.nnnow.com/web-images/medium/styles/3UEG2MOM9WJ/1567658710108/1.jpg",
+      "tag":"OFFER",
+      "brand" : "HUDA BEAUTY",
+      "title" : "The New Nude Eyeshadow Palette",
+      "price" : "5,375"
+    },
+    {
+      "img" : "https://cdn00.nnnow.com/web-images/medium/styles/RB2GD0T4W14/1603859985717/1.jpg",
+      "tag":"BESTSELLER",
+      "brand" : "OLAPLEX",
+      "title" : "N°5 Bond Maintenance Conditioner",
+      "price" : "1,550 - 2,950"
+    },
+    {
+      "img" : "https://cdn15.nnnow.com/web-images/medium/styles/CNQMZZSQ362/1631790357674/1.jpg",
+      "tag":"OFFER",
+      "brand" : "HUDA BEAUTY",
+      "title" : "Luminous Matte Full Coverage Liquid Foundation",
+      "price" : "3,300"
+    },
+    {
+      "img" : "https://cdn16.nnnow.com/web-images/medium/styles/62OALNJFPOD/1631615574163/1.jpg",
+      "tag":"OFFER",
+      "brand" : "HUDA BEAUTY",
+      "title" : "Glow Obsessions Mini Face Palette - Light",
+      "price" : "2,400"
+    },
+    {
+      "img" : "https://cdn15.nnnow.com/web-images/medium/styles/KHFROVPTCI2/1599046960541/1.jpg",
+      "tag":"BESTSELLER",
+      "brand" : "HUDA BEAUTY",
+      "title" : "No. 7 Bonding Oil Vitamin C UV Protection",
+      "price" : "2,950"
+    }
+     
+  ]
+
+}

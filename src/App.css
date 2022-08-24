@@ -36,3 +36,49 @@
     transform: rotate(360deg);
   }
 }
+
+/* 5th row */
+
+ .row5ht_box{
+  margin-top: 40px;
+ display: flex;
+ justify-content: space-evenly;
+}
+.back_btn{
+   background-color: black;
+   color: white;
+   padding: 20px;  
+}
+
+/* row 7th */
+
+.row7th_img{
+  display: flex;
+  justify-content: space-between;
+   gap: 20px;
+}
+
+ /* row 8th */
+.modal_img{
+  width: 250px;
+  height: 250px;
+}
+
+/* row 11 */
+
+.pro11{
+  display: inline-block ;
+  
+}
+.pro11image{
+   width: 200px;
+   height: 200px;
+  }
+
+  /* row 12 */
+
+  .row12ht_box{
+    display: flex;
+ justify-content: space-evenly; 
+ margin-top: 15px;
+  }
