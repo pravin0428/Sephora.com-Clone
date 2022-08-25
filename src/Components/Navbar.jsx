@@ -121,19 +121,15 @@ function Navbar() {
    {/* 3rd row */}
         
    <Box border="1px solid red" display="flex" justifyContent="space-evenly" >
-   <Button>SALE</Button>
-   <Button>MAKEUP</Button>
+   <Link href="/sale"><Button>SALE</Button></Link>
+    <Link href="/makeup"><Button>MAKEUP</Button></Link>  
    <Button>SKINCARE</Button>
    <Button>FRAGRANCE</Button>
    <Button>HAIRECARE</Button>
    <Button>TOOL & BRUSHES</Button>
    <Button>BRANDS</Button>
    </Box>
-
- 
- 
-
-    </>
+</>
   );
 }
 

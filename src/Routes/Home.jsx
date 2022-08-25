@@ -4,7 +4,7 @@ import RowDataDis from './RowDataDis';
 import Video from './Video';
 import { useEffect } from "react";
 import { useState } from "react";
-
+import Slideshow from './MySlidShow';
 function Home() {
 
     const[dataof11row , setDataof11row] = useState([])
@@ -19,17 +19,18 @@ function Home() {
 
   return (
     <>
- 
-
+  <Slideshow/> 
+  
 {/* it shold be in home comp  */}
 
  {/* <Box > */}
      {/* {arrOFMainImage?.map((elem)=>(
      <Image src={elem.img} />
     ))} */}
-   <Stack> 
-    <Image src="https://logan.nnnow.com/content/dam/nnnow-project/30-june-2022/se/SC_Topbanner_ExclusivelyatSephoradesktop.jpg" />
-    </Stack>
+  
+    {/* <Image src="https://logan.nnnow.com/content/dam/nnnow-project/30-june-2022/se/SC_Topbanner_ExclusivelyatSephoradesktop.jpg" /> */}
+  
+  
  {/* </Box> */}
 
  {/* fifth row */}
