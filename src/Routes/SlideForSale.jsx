@@ -1,39 +1,32 @@
- import React from "react"
+import React from "react"
  
 const colors = [ 
         {    
         id : 1,
-        img : "https://logan.nnnow.com/content/dam/nnnow-project/30-june-2022/se/SC_Topbanner_ExclusivelyatSephoradesktop.jpg"
+        img : "https://logan.nnnow.com/content/dam/nnnow-project/30-june-2022/se/SC_Offerpage_Upto40offdesktop.jpg"
         },
         {
           id : 2,  
-          img : "https://logan.nnnow.com/content/dam/nnnow-project/17-aug-2022/Benefit_Homepagebanner_Colormobile.jpg"
+          img : "https://logan.nnnow.com/content/dam/nnnow-project/02-aug-2022/SephoraandExclusives_TopBannerdesktop.jpg"
         },
         {
           id : 3,  
-          img : "https://logan.nnnow.com/content/dam/nnnow-project/17-aug-2022/ABH_Homepagebannermobile(1).jpg"
+          img : "https://logan.nnnow.com/content/dam/nnnow-project/08-aug-2022/se/DearDahlia_Offerpage_Paradisedreamdesktop.jpg"
         },
         {
           id : 4,  
-          img : "https://logan.nnnow.com/content/dam/nnnow-project/09-aug-2022/se/Esteelauder_Homepagebannerdesktop.jpg"
+          img : "https://logan.nnnow.com/content/dam/nnnow-project/03-aug-2022/Olaplex_Offerpagedesktop.jpg"
         },
     
         {
           id : 5,  
-          img : "https://logan.nnnow.com/content/dam/nnnow-project/16-aug-2022/se/Clarins_Topbannermobile.jpg"
-        },
-        {
-          id : 6,  
-         img : "https://logan.nnnow.com/content/dam/nnnow-project/15-july-2022/Hanzdefuko_Topbannerdesktop.jpg"
-        },
-        {
-          id : 7,  
-          img : "https://logan.nnnow.com/content/dam/nnnow-project/06-july-2022/Sephora_HomepageBannermobile.jpg"
+          img : "https://logan.nnnow.com/content/dam/nnnow-project/10-june-2022/se-/Lancome_TopBanner_Get10offdesktop.jpg"
         }
+       
     ];
 const delay = 2500;
 
-function Slideshow() {
+function SlideshowForSalePage() {
     const [index, setIndex] = React.useState(0);
     const timeoutRef = React.useRef(null);
   
@@ -88,6 +81,6 @@ function Slideshow() {
     );
   }
   
-  export default Slideshow
+  export default SlideshowForSalePage
 
  

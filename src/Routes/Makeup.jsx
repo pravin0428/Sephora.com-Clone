@@ -2,7 +2,7 @@ import { Box, Container, Image , SimpleGrid, Text , Stack , Img, Spacer, FormLab
 import React from 'react'
 import { useState } from 'react'
 import { useEffect } from 'react'
-
+import {Link} from "react-router-dom"
 function Makeup() {
 const [makeup , setMakeup] = useState([])
   useEffect(() =>{
@@ -27,43 +27,120 @@ const [makeup , setMakeup] = useState([])
     </Container>
 
     {/* side section of liks */}
-    <Container spacing="70px" maxW="250px" ml="-1px" mt="20px" border="1px solid red"  >
-    
+    <Container spacing="70px" maxW="250px"  ml="-1px" mt="20px">
+  
+  <div className="dropdown">
+  <button className="dropbtn">FACE</button>
+  <div className="dropdown-content">
+  <a href="/foundation">Foundation</a>
+  <a href="#">BB & CC Cream</a>
+  <a href="#">Concellere</a>
+  <a href="#">Face Primer</a>
+  <a href="#">Highlighter</a>
+  </div>
+</div>
+
+<div class="dropdown">
+  <button class="dropbtn">CHEEK</button>
+  <div class="dropdown-content">
+  <a href="#">Blush</a>
+  <a href="#">Bronzer</a>
+  <a href="#">Hightlighter</a>
+  </div>
+</div>
+
  
-  {/* <FormLabel>Country</FormLabel> */}
-  <select className='se' contenteditable="true" >
-    <option><li>FACE</li></option>
-    <option><li>Foundation</li></option>
-    <option>BB & CC Cream</option>
-    <option>Concellere</option>
-    <option>Face Primer</option>
-    <option>Highlighter</option>
-  </select>
+
+<div className="dropdown">
+<button className="dropbtn">EYE</button>
+<div className="dropdown-content">
+    <a href="#" >Eye Palette</a>
+    <a href="#" >Mascara</a>
+    <a href="#" >Eyeliner</a>
+    <a href="#" >Eyebrow</a>
+    <a href="#" >Eyeshadow</a>
+    <a href="#" >Eye Primer</a>
+    <a href="#" >Under-Eye Concealer</a>
+    </div>
+  </div>
+
+  <div className="dropdown">
+  <button className="dropbtn">LIP</button>
+  <div className="dropdown-content">
+  <a href="/">Foundation</a>
+  <a href="#">BB & CC Cream</a>
+  <a href="#">Concellere</a>
+    </div>
+</div>
+
+<div className="dropdown">
+  <button className="dropbtn">BRUSH AND APPLICATORS</button>
+  <div className="dropdown-content">
+  <a href="/">Foundation</a>
+  <a href="#">BB & CC Cream</a>
+  <a href="#">Concellere</a>
+  <a href="#">Face Primer</a>
+  <a href="#">Highlighter</a>
+  </div>
+</div>
  
+<div className="dropdown">
+  <button className="dropbtn">ACCESSORIES</button>
+  <div className="dropdown-content">
+  <a href="/">Foundation</a>
+  <a href="#">BB & CC Cream</a>
+  <a href="#">Concellere</a>
+  <a href="#">Face Primer</a>
+  <a href="#">Highlighter</a>
+  </div>
+</div>
+ 
+<div className="dropdown">
+  <button className="dropbtn">NAIL</button>
+  <div className="dropdown-content">
+  <a href="/">Foundation</a>
+  <a href="#">BB & CC Cream</a>
+  <a href="#">Concellere</a>
+  <a href="#">Face Primer</a>
+  <a href="#">Highlighter</a>
+  </div>
+</div>
 
-    {/* <Text>SHOPE</Text>
-    <Text>FACE</Text>
-    <Text>CHEECK</Text>
-    <Text>EYE</Text>
-    <Text>BRUSH AND APPLICATORS</Text>
-    <Text>ACCESSORIES</Text>
-    <Text>NAIL</Text>
-    <Text>MAKEUP PALETTES</Text>
-    <Text>VEGEN</Text> */}
-    </Container>
+<div className="dropdown">
+  <button className="dropbtn">MAKEUP PALETTE</button>
+  <div className="dropdown-content">
+  <a href="/">Foundation</a>
+  <a href="#">BB & CC Cream</a>
+  <a href="#">Concellere</a>
+  <a href="#">Face Primer</a>
+  <a href="#">Highlighter</a>
+  </div>
+</div>
+ 
+<div className="dropdown">
+  <button className="dropbtn">VEGAN</button>
+  <div className="dropdown-content">
+  <a href="/">Foundation</a>
+  <a href="#">BB & CC Cream</a>
+  <a href="#">Concellere</a>
+  <a href="#">Face Primer</a>
+  <a href="#">Highlighter</a>
+  </div>
+</div>
+</Container>
 
 
-    <Box className='makeupBox' overflow="hidden" border="1px solid black" width="70%" ml="320px" mt="-60px" minChildWidth="200px" spacing="20px">
+    <Box className='makeupBox' overflow="hidden" border="1px solid black" width="70%" ml="320px" mt="-190px" minChildWidth="200px" spacing="20px">
         {
         makeup &&
-          makeup.map((elem) => (
-            <Stack key={elem.id}>
+          makeup.map((elem , index) => (
+            <Stack key={index}>
               <Box >
               {/* onClick={handleModalComp} */}
                 <Img src={elem.prod_img} />
-                <Text> {elem.mode} </Text>
-                <Text> {elem.brand} </Text>
-                <Text> {elem.name} </Text>
+                <Text color = "rgb(213, 0, 50)" fontWeight="700" fontSize="13px" > {elem.mode} </Text>
+                <Text fontWeight="750" fontSize="14px" > {elem.brand} </Text>
+                <Text > {elem.name} </Text>
                 <Text> {elem.price} </Text>
                 <Text> {elem.offer} </Text>
               </Box>

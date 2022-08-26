@@ -37,6 +37,19 @@
   }
 }
 
+/* navbar css */
+.navCategotybtn{
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px;
+}
+.navCategotybtn:hover {
+  color: #fa23a4;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
 /* 5th row */
 
  .row5ht_box{
@@ -94,11 +107,164 @@
 
  .makeupBox{
   width: 500px;
+  display: grid;
+  grid-template-columns: repeat(4 ,1fr);
   margin-right: auto;
    margin-top: 0px;
    text-align: center;
    overflow: hidden;
  }
+
+ .selectBoxofOption{
+  /* border: 1px solid rgb(247, 245, 249); border: 1px solid rgb(247, 245, 249); */
+  display: flex;
+  justify-content: space-between;
+  width: 230px;
+  }
+
+  /* DROPDOWN BOX IN MAKEUP  */
+
+  .dropbtn {
+    /* background-color: #4CAF50; */
+    color: rgb(8, 8, 8);
+    padding: 4px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 8px 16px 0px rgba(247, 2, 2, 0.2);
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    width: 250px;
+    
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(247, 2, 2, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: neon;
+  }
+
+
+  /* dondation page in makup option */
+
+  
+ .dropbtninFoundationPage {  
+    /* background-color: #4CAF50; */
+    color: rgb(8, 8, 8);
+    padding: 4px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 290px;
+    
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  }
+  
+  .dropdowninFoundationPage {
+    position: relative;
+    display: inline-block;
+    width: 700px;
+    margin-left: 76%;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(247, 2, 2, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  .dropdowninFoundationPage:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdowninFoundationPage:hover .dropdowninFoundationPage {
+    background-color: neon;
+  }
+
+/* for left filter section */
+
+.dropbtninFoundationPageLeft {  
+  /* background-color: #4CAF50; */
+  color: rgb(8, 8, 8);
+  padding: 4px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 200px;
+  margin-left: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.dropdowninFoundationPageLeft {
+  position: relative;
+  display: inline-block;
+  /* width: 400px; */
+  margin-left: 10px;
+  border: 2px solid green;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(247, 2, 2, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdowninFoundationPageLeft:hover .dropdown-content {
+  display: block;
+}
+
+.dropdowninFoundationPageLeft:hover .dropdowninFoundationPageLeft {
+  background-color: neon;
+}
 
  /* slid Show com */
  
@@ -148,3 +314,100 @@
 .slideshowDot.active {
   background-color: #6a0dad;
 }
+
+/* footer page css */
+
+#subscribe h2 {
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#subscribe {
+  background-color: whitesmoke;
+  margin-top: 50px;
+}
+#subscribe > div:last-child {
+  display: flex;
+  justify-content: center;
+}
+#subscribe input {
+  width: 300px;
+  height: 50px;
+  font-size: 20px;
+  border: 0;
+  margin-bottom: 5px;
+}
+#subscribe input:focus {
+  outline: 0;
+}
+#subscribe button {
+  width: 200px;
+  margin-bottom: 5px;
+  border: 0;
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#subscribe button:hover {
+  cursor: pointer;
+}
+#contentFoot {
+  width: 90%;
+  margin: auto;
+  margin-top: 30px;
+  color: #656565;
+}
+#contentFoot h3 {
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: -10px;
+}
+#contentFoot > h3{
+  margin-bottom: 10px;
+}
+#contentFoot p {
+  text-align: center;
+  line-height: 25px;
+  margin-bottom: 30px;
+}
+#contentFoot > h3:first-child {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+#links {
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+#links a {
+  text-decoration: none;
+  color: black;
+  letter-spacing: 2px;
+}
+#links a:hover {
+  color: #ec008c;
+}
+#social {
+  margin: auto;
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+}
+#social i {
+  font-size: 20px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+#social i:hover {
+  font-size: 25px;
+  color: #ec008c;
+  cursor: pointer;
+}
+
+

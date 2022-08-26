@@ -5,6 +5,7 @@ import Makeup from "./Makeup"
 import Regiter from "./Regiter"
 import Sale from "./Sale"
 import Skincare from "./Skincare"
+import Foundation from "./Foundation"
 function AllRoutes() {
   return (
      <Routes>
@@ -14,6 +15,7 @@ function AllRoutes() {
         <Route path="/sale" element={<Sale/>} />
         <Route path="/skincare" element={<Skincare/>} />
         <Route path="/register" element={<Regiter/>} />
+        <Route path="/foundation" element={<Foundation/>} />
      </Routes>
   )
 }

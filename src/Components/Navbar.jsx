@@ -1,39 +1,18 @@
 import { Link ,  Image, HStack, Box, Input, Button, Container, Stack, Heading , Text} from "@chakra-ui/react";
+import { useState } from "react";
+  import ModalComponent from "./ModalComp" 
  
-// let arrOFMainImage = [
-//     {
-//       img : "https://logan.nnnow.com/content/dam/nnnow-project/30-june-2022/se/SC_Topbanner_ExclusivelyatSephoradesktop.jpg"
-//     },
- 
-//     {
-//         img : "https://logan.nnnow.com/content/dam/nnnow-project/17-aug-2022/Benefit_Homepagebanner_Colormobile.jpg"
-//       },
-//       {
-//         img : "https://logan.nnnow.com/content/dam/nnnow-project/17-aug-2022/ABH_Homepagebannermobile(1).jpg"
-//       },
-//       {
-//         img : "https://logan.nnnow.com/content/dam/nnnow-project/09-aug-2022/se/Esteelauder_Homepagebannerdesktop.jpg"
-//       },
-  
-//       {
-//         img : "https://logan.nnnow.com/content/dam/nnnow-project/16-aug-2022/se/Clarins_Topbannermobile.jpg"
-//       },
-//       {
-//        img : "https://logan.nnnow.com/content/dam/nnnow-project/15-july-2022/Hanzdefuko_Topbannerdesktop.jpg"
-//       },
-//       {
-//         img : "https://logan.nnnow.com/content/dam/nnnow-project/06-july-2022/Sephora_HomepageBannermobile.jpg"
-//       }
-       
-// ]
 
 
 function Navbar() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
- 
+  const handleModalComp = () => {
+    setIsModalOpen(true);
+    // setModalInfo(elem);
+  };
 
-
-  return (
+return (
     <>
       {/* navbar start */}
 
@@ -112,7 +91,8 @@ function Navbar() {
             <Link to="x">love</Link>
           </Box>
           <Box>
-            <Link href="/login">Login</Link>
+            <Text onClick={handleModalComp} >Login</Text>
+          <ModalComponent isOpen={isModalOpen} setIsOpe={setIsModalOpen} />
           </Box>
         </Box>
  
@@ -120,15 +100,17 @@ function Navbar() {
    
    {/* 3rd row */}
         
-   <Box border="1px solid red" display="flex" justifyContent="space-evenly" >
-   <Link href="/sale"><Button>SALE</Button></Link>
-    <Link href="/makeup"><Button>MAKEUP</Button></Link>  
-   <Button>SKINCARE</Button>
-   <Button>FRAGRANCE</Button>
-   <Button>HAIRECARE</Button>
-   <Button>TOOL & BRUSHES</Button>
-   <Button>BRANDS</Button>
+   <Box  display="flex" justifyContent="space-evenly" >
+   <Link href="/sale" className="navCategotybtn" > SALE </Link>
+   <Link href="/makeup" className="navCategotybtn" > MAKEUP </Link>  
+   <Link href="/makeup" className="navCategotybtn" > SKINCARE </Link>  
+   <Link href="/makeup" className="navCategotybtn" > FRAGRANCE </Link>
+   <Link href="/makeup" className="navCategotybtn" >HAIRECARE </Link>  
+   <Link href="/makeup" className="navCategotybtn" > TOOL & BRUSHES </Link>  
+   <Link href="/makeup" className="navCategotybtn" > BRANDS </Link>  
+ 
    </Box>
+
 </>
   );
 }

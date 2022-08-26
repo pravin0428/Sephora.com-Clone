@@ -5,12 +5,15 @@ import Video from './Video';
 import { useEffect } from "react";
 import { useState } from "react";
 import Slideshow from './MySlidShow';
+
+ 
+
 function Home() {
 
     const[dataof11row , setDataof11row] = useState([])
 
     useEffect(()=>{
-     fetch("http://localhost:3006/projectRow11").then((res)=> res.json())
+     fetch("https://database-pravin.herokuapp.com/projectRow11").then((res)=> res.json())
      .then((res) => {
          console.log(res)
          setDataof11row(res)
@@ -19,19 +22,8 @@ function Home() {
 
   return (
     <>
+  {/* <Slideshow/>  */}
   <Slideshow/> 
-  
-{/* it shold be in home comp  */}
-
- {/* <Box > */}
-     {/* {arrOFMainImage?.map((elem)=>(
-     <Image src={elem.img} />
-    ))} */}
-  
-    {/* <Image src="https://logan.nnnow.com/content/dam/nnnow-project/30-june-2022/se/SC_Topbanner_ExclusivelyatSephoradesktop.jpg" /> */}
-  
-  
- {/* </Box> */}
 
  {/* fifth row */}
 

@@ -2,23 +2,35 @@ import { Box, Container, Img, SimpleGrid, Stack , Image } from '@chakra-ui/react
 import React from 'react'
 import { useEffect } from 'react'
 import { useState } from 'react'
+import SlideshowForSalePage from './SlideForSale'
  
 function Sale() {
 
    const[sale , setSale] = useState([])
-
+   const [loading , setLoading] = useState("false")
    useEffect(()=>{
+    setLoading(true)
     fetch(`https://database-pravin.herokuapp.com/sale`).then((res) => res.json())
+    
     .then((res)=>{
-      console.log(res)
+      setLoading(false)
+      // console.log(res)
       setSale(res)
-    }).catch((err) =>{
-      console.log(err)
+    }).catch(() =>{
+      setLoading(false)
+      // console.log(err)
     })
    },[])
 
+  //  if(loading){
+  //   <h1>Loading...</h1>
+  //  }
+
   return (
     <>
+
+<SlideshowForSalePage/>
+
     <Container maxW='550%' mt="15px" >
    <Box className="row7th_img" >
    <Box> <Image src="https://logan.nnnow.com/content/dam/nnnow-project/30-sep-2020/30SEP20_SEPHORA-OFFERPAGEZ_PREHEADER_DESK.jpg" alt="saleTag" /> </Box>
