@@ -2,11 +2,11 @@ import { Box, Container, Image , SimpleGrid, Text , Stack , Img, Spacer, FormLab
 import React from 'react'
 import { useState } from 'react'
 import { useEffect } from 'react'
-import {Link} from "react-router-dom"
-function Makeup() {
+ 
+function ToolAndBrushes() {
 const [makeup , setMakeup] = useState([])
   useEffect(() =>{
-  fetch(`https://database-pravin.herokuapp.com/makeup`).then((res) => res.json())
+  fetch(`https://database-pravin.herokuapp.com/toolandbrush`).then((res) => res.json())
   .then((res) =>{
     // console.log(res)
     setMakeup(res)
@@ -22,7 +22,7 @@ const [makeup , setMakeup] = useState([])
     <> 
     <Container maxW='550%' mt="15px" >
     <Box className="row7th_img" >
-    <Box> <Image src="https://logan.nnnow.com/content/dam/nnnow-project/27-sep-2021/MakeupDesktop.jpg" alt="makeupmainImg" /> </Box>
+    <Box> <Image src="https://logan.nnnow.com/content/dam/nnnow-project/27-sep-2021/Tools_BrushesDesktop.jpg" alt="makeupmainImg" /> </Box>
     </Box>
     </Container>
 
@@ -130,7 +130,7 @@ const [makeup , setMakeup] = useState([])
 </Container>
 
 
-    <Box className='makeupBox' overflow="hidden" width="70%" ml="320px" mt="-190px" minChildWidth="200px" spacing="20px">
+    <Box className='makeupBox' overflow="hidden"  width="70%" ml="320px" mt="-190px" minChildWidth="200px" spacing="20px">
         {
         makeup &&
           makeup.map((elem , index) => (
@@ -153,4 +153,4 @@ const [makeup , setMakeup] = useState([])
   )
 }
 
-export default Makeup
+export default ToolAndBrushes

@@ -37,7 +37,7 @@ function Sale() {
    </Box>
    </Container>
 
-       <SimpleGrid border="5px solid black" minChildWidth='350px' spacing='35px'>
+       <SimpleGrid minChildWidth='350px' spacing='35px'>
        {sale &&
          sale.map((elem) => (
            <Stack key={elem.id}>

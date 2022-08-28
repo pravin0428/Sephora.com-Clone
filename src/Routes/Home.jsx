@@ -59,8 +59,8 @@ function Home() {
     <Image src="https://logan.nnnow.com/content/dam/nnnow-project/16-march-2022/justlanded.jpg" />
    </Stack>
     
-  <Box border="2px solid black" width="100%" display="flex" justifyContent="space-between" >
-  <Box  border="2px solid red" display="flex" width="50%"  >
+  <Box width="100%" display="flex" justifyContent="space-between" >
+  <Box display="flex" width="50%"  >
 
    <Box textAlign="center" ><Image className="modal_img" src="https://cdn16.nnnow.com/web-images/medium/styles/7C1N04O5PPK/1655201666947/1.jpg" />
    <Text fontWeight="700" fontSize="14px" >HUDA BEAUTY</Text>
@@ -80,7 +80,7 @@ function Home() {
   </Box>
 
   {/* video */}
-  <Box border="2px solid purple" width="50%">
+  <Box   width="50%">
     <Video/>
   </Box>
   </Box>  

@@ -6,6 +6,10 @@ import Regiter from "./Regiter"
 import Sale from "./Sale"
 import Skincare from "./Skincare"
 import Foundation from "./Foundation"
+import Fragrance from "./Fragrance"
+import ToolAndBrushes from "./ToolAndBrush"
+import HaireCare from "./HaireCare"
+import Brand from "./Brand"
 function AllRoutes() {
   return (
      <Routes>
@@ -16,6 +20,10 @@ function AllRoutes() {
         <Route path="/skincare" element={<Skincare/>} />
         <Route path="/register" element={<Regiter/>} />
         <Route path="/foundation" element={<Foundation/>} />
+        <Route path="/fragrance" element={<Fragrance/>} />
+        <Route path="/toolAndBrushes" element={<ToolAndBrushes/>} />
+        <Route path="/hairCare" element={<HaireCare/>} />
+        <Route path="/brand" element={<Brand/>} />
      </Routes>
   )
 }

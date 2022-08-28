@@ -1,4 +1,4 @@
-import { Box, Container, Image , SimpleGrid, Text , Stack , Img, Spacer, FormLabel, FormControl , Select} from '@chakra-ui/react'
+import { Box, Container, Image , SimpleGrid, Text , Stack , Img, Spacer, FormLabel, FormControl , Select, Button} from '@chakra-ui/react'
 import React from 'react'
 import { useState } from 'react'
 import { useEffect } from 'react'
@@ -176,17 +176,18 @@ const [brandSort, setBrandSort] = useState("ASC");
  
    
         
- <SimpleGrid border="1px solid black" minChildWidth="250px" spacing="20px"  width="70%" ml="320px" mt="-400px">
+ <SimpleGrid   minChildWidth="250px" spacing="20px"  width="70%" ml="320px" mt="-400px">
         {foundation &&
           foundation.map((elem , index) => (
-            <Stack key={index}>
-              <Box textAlign="center" border="2px solid orange"  >
+            <Stack textAlign="center"  key={index}>
+              <Box>
               <Img src={elem.prod_img} />
               <Text color = "green" fontWeight="700" fontSize="13px" > {elem.mode} </Text>
                <Text fontWeight="750" fontSize="14px" > {elem.brand} </Text>
                 <Text > {elem.name} </Text>
-                <Text> {elem.price} </Text>
+                <Text> {`Rs ${elem.price}`} </Text>
                 <Text> {elem.offer} </Text>
+                {/* <Button width="150px" height="30px" color="skyblue" >Cart</Button> */}
               </Box>
             </Stack>
           ))}

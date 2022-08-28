@@ -1,4 +1,4 @@
-import { border, Box , Image , Text} from '@chakra-ui/react'
+import {  Box , Image , Text} from '@chakra-ui/react'
 import React from 'react'
 
 function RowDataDis({img , brand , title , tag , price , id}) {
