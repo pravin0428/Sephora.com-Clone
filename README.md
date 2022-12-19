@@ -15,8 +15,8 @@ sephora.com-Clone "it is an beauty products app where wide range of beauty produ
 
 ## Credits
 
- - Images : [fiverr.com](https://www.sephora.com/)
- - Content : [fiverr.com](https://www.sephora.com/)
+ - Images : [sephora.com](https://www.sephora.com/)
+ - Content : [sephora.com](https://www.sephora.com/)
  - Icons : [Chakra Icons](https://chakra-ui.com/)
  - References : [React.js](https://reactjs.org/) | [Ckakra UI](https://chakra-ui.com/)
 
