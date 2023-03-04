@@ -23,76 +23,7 @@ function Navbar() {
 
 return (
     <>
-      {/* navbar start */}
-
-      <HStack
-        // border="2px solid black"
-        width="100%"
-        spacing="80px"
-        height="50px"
-      >
-        <Box marginLeft="9px" >
-          <Image
-            width="190px"
-            height="45px"
-            
-            src="https://cdn02.nnnow.com/web-images/master/navtree_metaData/59b2425ae4b0d70964ee66e0/1505806763887/12NNNOWLOGODESKTOP.png"
-            alt="logo"
-          />
-        </Box>
-        {/* <Box>
-          <Link to=""> Store Locator</Link>
-        </Box> */}
-
-        <Box width="270px" >
-             <Link to="" display="flex" ><BaselineLocationOn style={{fontSize: "1.2em",color: "#f39"   , marginTop:"4px" }}/>
-             Store Locator
-             </Link>
-         </Box>
-
-        <Box width="800px"
-      //  border="1px solid red"
-        flexWrap="wrap"
-        textAlign="center" 
-        >
-          <Link to=""  display="flex" > <OutlineStar style={{fontSize: "1.2em",color: "#704280" ,  marginTop:"12px" }} ></OutlineStar>
-          <OutlineStar style={{fontSize: "1.2em",color: "#ffc001" , marginTop:"12px"  }} ></OutlineStar>
-          <OutlineStar style={{fontSize: "1.2em",color: "#ec008c" , marginTop:"12px" }} ></OutlineStar>
-            Get 10% OFF on your first purchase. Use Code: BEAUTY10
-            <OutlineStar style={{fontSize: "1.2em",color: "#704280" , marginTop:"12px" }} ></OutlineStar>
-            <OutlineStar style={{fontSize: "1.2em",color: "#ffc001" , marginTop:"12px" }} ></OutlineStar>
-            <OutlineStar style={{fontSize: "1.2em",color: "#ec008c" , marginTop:"12px" }} ></OutlineStar>
-          </Link>
-        </Box>
-
-        <Box
-          width="600px"
-      //  border="1px solid red"
-          display="flex"
-          justifyContent="space-evenly"
-          flexWrap="wrap"
-        >
-
-         <Box width="100px" >
-             <Link to="" display="flex" fontWeight="400"  ><BaselineGetApp style={{fontSize: "1.2em",color: "#f39" ,  marginTop:"4px" }}/>
-             Get APP
-             </Link>
-         </Box>
-
-         <Box width="100px" >
-             <Link to="" display="flex"   fontWeight="400" ><BaselineArtTrack style={{fontSize: "1.2em",color: "#f39" ,marginTop:"4px"   }}/>
-             Track
-             </Link>
-         </Box>
-
-         <Box width="100px" >
-             <Link to="" display="flex"   fontWeight="400"  ><OutlineLoyalty style={{fontSize: "1.2em",color: "#f39" ,  marginTop:"4px" }}/>
-            Loyalty
-             </Link>
-         </Box>
-
-        </Box>
-      </HStack>
+   
 
     {/* 2nd row */}
       
