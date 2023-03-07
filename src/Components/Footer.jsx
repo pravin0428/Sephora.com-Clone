@@ -8,10 +8,7 @@ function Footer() {
                 GET THE LASTEST NEWS & OFFERS IN BEAUTY & FASHION
             </h2></div>
             
-            <div>
-                <input type="text" placeholder="Enter your Email Address"/>
-                <button>SUBSCRIBE</button>
-            </div>
+    
         </div>
         <div id="contentFoot">
             <h3>Sephora online India is a trailblazer in the Indian beauty scene</h3>

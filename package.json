@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@chakra-ui/icons": "^2.0.8",
+    "@chakra-ui/icons": "^2.0.17",
     "@chakra-ui/react": "^2.2.8",
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
@@ -14,6 +14,7 @@
     "framer-motion": "^7.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.8.0",
     "react-md-icon": "^1.13.0",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
@@ -42,6 +43,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ],
-    "homepage":"."
+    "homepage": "."
   }
 }

@@ -32,7 +32,7 @@ function Navbar() {
         w="100%"
         zIndex={1}
         color="#f0d122"
-        borderBottom="1px solid white"
+        // borderBottom="1px solid white"
       >
         <Flex
           h={16}
@@ -72,7 +72,7 @@ function Navbar() {
             <HStack
               as={"nav"}
               spacing={5}
-              display={{ base: "none", md: "flex" }}
+              display={{ base: "none", sm:"none" , md: "flex" , lg:"flex" }}
            
                
              
@@ -107,18 +107,24 @@ function Navbar() {
               >
         
         <Box width="800px"
-        border="1px solid red"
+        // border="1px solid red"
         flexWrap="wrap"
         textAlign="center" 
         display="flex" 
         justifyContent="center"
         ml={-12}
         >
-            <Box display="flex"   border="1px solid green" > <OutlineStar style={{fontSize: "1.2em",color: "#704280" , marginTop:"12px" }} ></OutlineStar>
+            <Box display="flex"  
+            //  border="1px solid green"
+              > <OutlineStar style={{fontSize: "1.2em",color: "#704280" , marginTop:"12px" }} ></OutlineStar>
             <OutlineStar style={{fontSize: "1.2em",color: "#ffc001" , marginTop:"12px" }} ></OutlineStar>
             <OutlineStar style={{fontSize: "1.2em",color: "#ec008c" , marginTop:"12px" }} ></OutlineStar></Box>
-          <Box border="1px solid yellow" p={2} >Get 10% OFF on your first purchase. Use Code: BEAUTY10</Box>
-         <Box display="flex"   border="1px solid green" > <OutlineStar style={{fontSize: "1.2em",color: "#704280" , marginTop:"12px" }} ></OutlineStar>
+          <Box 
+          // border="1px solid yellow"
+           p={2} >Get 10% OFF on your first purchase. Use Code: BEAUTY10</Box>
+         <Box display="flex"   
+        //  border="1px solid green"
+          > <OutlineStar style={{fontSize: "1.2em",color: "#704280" , marginTop:"12px" }} ></OutlineStar>
             <OutlineStar style={{fontSize: "1.2em",color: "#ffc001" , marginTop:"12px" }} ></OutlineStar>
             <OutlineStar style={{fontSize: "1.2em",color: "#ec008c" , marginTop:"12px" }} ></OutlineStar></Box>
      </Box>

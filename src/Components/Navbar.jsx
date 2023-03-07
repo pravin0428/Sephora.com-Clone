@@ -1,4 +1,4 @@
-import { Link ,  Image, HStack, Box, Input, Button, Container, Stack, Heading , Text, border} from "@chakra-ui/react";
+import { Link ,  Image, HStack, Box, Input, Button, Container, Stack, Heading , Text, border, Flex} from "@chakra-ui/react";
 import { useState } from "react";
 import BaselineCardTravel from "react-md-icon/dist/BaselineCardTravel" 
 import BaselineFavorite from "react-md-icon/dist/BaselineFavorite" 
@@ -28,50 +28,35 @@ return (
     {/* 2nd row */}
       
      <Box width="100%"
-        //   border="1px solid red"
-          display="flex"
-          justifyContent="space-between"
-          flexWrap="wrap" >
-
-       <Box marginTop="30px"  >
-          <Input  placeholder="Search" type="text" width="300px"   />
-        </Box>
-        <Box>
+          //  border="3px solid red"
+           display="flex"
+          //  justifyContent="space-evenly"
+        
+         padding="0px 20px 0px 20px"
+          
+          // display={{ base : "none" ,  sm : "none" , md : "none" , lg :"flex"}} 
+          
+          >
+               <Box margin="auto" >
         <Link href="/">
-        <Image src="https://cdn07.nnnow.com/web-images/master/navtree_metaData/59b2657be4b0e6b6e16a9180/1548053082431/se.png" alt="nameOFweb" width="223px"
+
+        <Image  
+        // border={{ base : "2px solid teal" ,  sm : "2px solid red" , md : "2px solid green" , lg :"2px solid yellow" }}
+        // display={{ base : "none" ,  sm : "none" , md : "none" , lg :"block"}} 
+        src="https://cdn07.nnnow.com/web-images/master/navtree_metaData/59b2657be4b0e6b6e16a9180/1548053082431/se.png" alt="nameOFweb" width="95%"
             height="100px" />
         </Link>
         </Box>
-
-        <Box
-          width="250px"
-        //   border="1px solid red"
-          display="flex"
-          justifyContent="space-evenly"
-          flexWrap="wrap"
-         marginTop="40px"
-        >
-          <Box>
-             <Text display="flex"  ><BaselineFavorite style={{fontSize: "1.2em",color: "#f39" ,  marginTop:"4px" }}/>
-             </Text>
-         </Box>
-
-          <Box>
-             <Text display="flex" ><BaselineCardTravel style={{fontSize: "1.2em",color: "#f39" ,   marginTop:"4px" }}/></Text>
-         </Box>
-
-          <Box>
-             <Text onClick={handleModalComp} display="flex"  gap="2px" ><BaselineAccountCircle style={{fontSize: "1.2em",color: "#f39" , marginTop:"4px" }}/>
-              Login</Text>
-          <ModalComponent isOpen={isModalOpen} setIsOpe={setIsModalOpen} />
-          </Box>
-        </Box>
- 
+        {/* <Box>
+          <Text mt="35px" display="flex" gap="10px" ><BaselineCardTravel style={{fontSize: "1.2em",color: "#f39" ,   marginTop:"4px" }}/>Cart</Text>
+        </Box> */}
      </Box>
    
    {/* 3rd row */}
         
-   <Box  display="flex" justifyContent="space-evenly" >
+   <Box  display="Flex" flexWrap="wrap" 
+  //border={{ base : "2px solid teal" ,  sm : "2px solid red" , md : "2px solid green" , lg :"2px solid yellow" }} 
+   justifyContent="space-evenly"   >
    <Link href="/sale" className="navCategotybtn" > SALE </Link>
    <Link href="/makeup" className="navCategotybtn" > MAKEUP </Link>  
    <Link href="/skincare" className="navCategotybtn" > SKINCARE </Link>  
