@@ -1,4 +1,4 @@
-import { Link ,  Image, HStack, Box, Input, Button, Container, Stack, Heading , Text, border, Flex} from "@chakra-ui/react";
+import {  Image, HStack, Box, Input, Button, Container, Stack, Heading , Text, border, Flex} from "@chakra-ui/react";
 import { useState } from "react";
 import BaselineCardTravel from "react-md-icon/dist/BaselineCardTravel" 
 import BaselineFavorite from "react-md-icon/dist/BaselineFavorite" 
@@ -8,7 +8,7 @@ import BaselineGetApp from "react-md-icon/dist/BaselineGetApp"
 import BaselineArtTrack from "react-md-icon/dist/BaselineArtTrack"
 import OutlineLoyalty from "react-md-icon/dist/OutlineLoyalty"
 import OutlineStar from "react-md-icon/dist/OutlineStar"
- 
+ import {Link} from "react-router-dom"
   import ModalComponent from "./ModalComp" 
  
 
@@ -38,7 +38,7 @@ return (
           
           >
                <Box margin="auto" >
-        <Link href="/">
+        <Link to="/">
 
         <Image  
         // border={{ base : "2px solid teal" ,  sm : "2px solid red" , md : "2px solid green" , lg :"2px solid yellow" }}
@@ -47,9 +47,9 @@ return (
             height="100px" />
         </Link>
         </Box>
-        {/* <Box>
-          <Text mt="35px" display="flex" gap="10px" ><BaselineCardTravel style={{fontSize: "1.2em",color: "#f39" ,   marginTop:"4px" }}/>Cart</Text>
-        </Box> */}
+        <Link to="cart" >
+          <Text mt="35px" display="flex" gap="10px"  ><BaselineCardTravel style={{fontSize: "1.2em",color: "#f39" ,   marginTop:"4px" }}/>Cart</Text>
+        </Link>
      </Box>
    
    {/* 3rd row */}
@@ -57,13 +57,13 @@ return (
    <Box  display="Flex" flexWrap="wrap" 
   //border={{ base : "2px solid teal" ,  sm : "2px solid red" , md : "2px solid green" , lg :"2px solid yellow" }} 
    justifyContent="space-evenly"   >
-   <Link href="/sale" className="navCategotybtn" > SALE </Link>
-   <Link href="/makeup" className="navCategotybtn" > MAKEUP </Link>  
-   <Link href="/skincare" className="navCategotybtn" > SKINCARE </Link>  
-   <Link href="/fragrance" className="navCategotybtn" > FRAGRANCE </Link>
-   <Link href="/hairCare" className="navCategotybtn" >HAIRECARE </Link>  
-   <Link href="/toolAndBrushes" className="navCategotybtn" > TOOL & BRUSHES </Link>  
-   <Link href="/brand" className="navCategotybtn" > BRANDS </Link>  
+   <Link to="sale" className="navCategotybtn" > SALE </Link>
+   <Link to="makeup" className="navCategotybtn" > MAKEUP </Link>  
+   <Link to="skincare" className="navCategotybtn" > SKINCARE </Link>  
+   <Link to="fragrance" className="navCategotybtn" > FRAGRANCE </Link>
+   <Link to="hairCare" className="navCategotybtn" >HAIRECARE </Link>  
+   <Link to="toolAndBrushes" className="navCategotybtn" > TOOL & BRUSHES </Link>  
+   <Link to="brand" className="navCategotybtn" > BRANDS </Link>  
  
    </Box>
 

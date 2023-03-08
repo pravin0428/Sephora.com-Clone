@@ -11,11 +11,12 @@ import ToolAndBrushes from "./ToolAndBrush"
 import HaireCare from "./HaireCare"
 import Brand from "./Brand"
 import SingleProduct from "./SingleProduct"
+import Cart from "./Cart"
 function AllRoutes() {
   return (
      <Routes>
         <Route path="/" element={<Home/>} />  
-        <Route  path="/login" element={<Login/>} />
+        <Route path="/login" element={<Login/>} />
         <Route path="/makeup" element={<Makeup/>} />
         <Route path="/sale" element={<Sale/>} />
         <Route path="/skincare" element={<Skincare/>} />
@@ -25,6 +26,7 @@ function AllRoutes() {
         <Route path="/toolAndBrushes" element={<ToolAndBrushes/>} />
         <Route path="/hairCare" element={<HaireCare/>} />
         <Route path="/brand" element={<Brand/>} />
+          <Route path="/cart" element={<Cart/>} />  
         <Route path="/makeup/:id" element={<SingleProduct/>} />
      </Routes>
   )

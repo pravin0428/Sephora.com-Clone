@@ -64,7 +64,7 @@
     {
       "id": 1,
       "brandName": "Lancôme",
-      "cat" : "ss",
+      "cat": "ss",
       "displayName": "UV Expert Aquagel Defense Sunscreen, Primer & Moisturizer Broad Spectrum SPF 50",
       "heroImage": "https://www.sephora.com/productimages/sku/s2186773-main-grid.jpg",
       "image135": "https://www.sephora.com/productimages/sku/s2186773-main-grid.jpg",
@@ -79,7 +79,7 @@
     {
       "id": 2,
       "brandName": "Charlotte Tilbury",
-      "cat" : "foundation",
+      "cat": "foundation",
       "displayName": "Hollywood Flawless Filter",
       "heroImage": "https://www.sephora.com/productimages/sku/s2419786-main-grid.jpg",
       "image135": "https://www.sephora.com/productimages/sku/s2419786-main-grid.jpg",
@@ -94,7 +94,7 @@
     {
       "id": 3,
       "brandName": "Bobbi Brown",
-      "cat" : "ss",
+      "cat": "ss",
       "displayName": "Vitamin Enriched Face Base Priming Moisturizer",
       "heroImage": "https://www.sephora.com/productimages/sku/s1292820-main-grid.jpg",
       "image135": "https://www.sephora.com/productimages/sku/s1292820-main-grid.jpg",
@@ -109,7 +109,7 @@
     {
       "id": 4,
       "brandName": "Lancôme",
-
+      "cat": "lip",
       "displayName": "L'Absolu Lacquer Long-Lasting Liquid Lipstick",
       "heroImage": "https://www.sephora.com/productimages/sku/s2067544-main-grid.jpg",
       "image135": "https://www.sephora.com/productimages/sku/s2067544-main-grid.jpg",
@@ -124,7 +124,7 @@
     {
       "id": 5,
       "brandName": "NARS",
-
+      "cat": "lip",
       "displayName": "Radiant Creamy Concealer",
       "heroImage": "https://www.sephora.com/productimages/sku/s2172310-main-grid.jpg?pb=2020-03-allure-best-2018",
       "image135": "https://www.sephora.com/productimages/sku/s2172310-main-grid.jpg?pb=2020-03-allure-best-2018",
@@ -139,7 +139,7 @@
     {
       "id": 6,
       "brandName": "Natasha Denona",
-
+      "cat": "eyeshadow",
       "displayName": "Glam Eyeshadow Palette",
       "heroImage": "https://www.sephora.com/productimages/sku/s2378313-main-grid.jpg",
       "image135": "https://www.sephora.com/productimages/sku/s2378313-main-grid.jpg",
@@ -154,7 +154,7 @@
     {
       "id": 7,
       "brandName": "Armani Beauty",
-      "cat" : "foundation",
+      "cat": "foundation",
       "displayName": "Luminous Silk Perfect Glow Flawless Oil-Free Foundation",
       "heroImage": "https://www.sephora.com/productimages/sku/s1491380-main-grid.jpg?pb=2020-03-allure-best-2018",
       "image135": "https://www.sephora.com/productimages/sku/s1491380-main-grid.jpg?pb=2020-03-allure-best-2018",
@@ -169,7 +169,7 @@
     {
       "id": 8,
       "brandName": "NARS",
-      "cat" : "foundation",
+      "cat": "foundation",
       "displayName": "Light Reflecting Advanced Skincare Foundation",
       "heroImage": "https://www.sephora.com/productimages/sku/s2514586-main-grid.jpg",
       "image135": "https://www.sephora.com/productimages/sku/s2514586-main-grid.jpg",
@@ -184,7 +184,7 @@
     {
       "id": 9,
       "brandName": "Yves Saint Laurent",
-     
+      "cat": "lip",
       "displayName": "Candy Glaze Lip Gloss Stick",
       "heroImage": "https://www.sephora.com/productimages/sku/s2511335-main-grid.jpg",
       "image135": "https://www.sephora.com/productimages/sku/s2511335-main-grid.jpg",
@@ -199,7 +199,7 @@
     {
       "id": 10,
       "brandName": "MAKE UP FOR EVER",
-      "cat" : "foundation",
+      "cat": "foundation",
       "displayName": "HD Skin Undetectable Longwear Foundation",
       "heroImage": "https://www.sephora.com/productimages/sku/s2514156-main-grid.jpg",
       "image135": "https://www.sephora.com/productimages/sku/s2514156-main-grid.jpg",
@@ -214,7 +214,7 @@
     {
       "id": 11,
       "brandName": "Laura Mercier",
-      "cat" : "foundation",
+      "cat": "foundation",
       "displayName": "Translucent Loose Setting Powder",
       "heroImage": "https://www.sephora.com/productimages/sku/s870618-main-grid.jpg",
       "image135": "https://www.sephora.com/productimages/sku/s870618-main-grid.jpg",
@@ -229,7 +229,7 @@
     {
       "id": 12,
       "brandName": "Hourglass",
-
+      "cat": "lip",
       "displayName": "Vanish™ Airbrush Concealer",
       "heroImage": "https://www.sephora.com/productimages/sku/s2303006-main-grid.jpg",
       "image135": "https://www.sephora.com/productimages/sku/s2303006-main-grid.jpg",
@@ -244,7 +244,6 @@
     {
       "id": 13,
       "brandName": "Grande Cosmetics",
-
       "displayName": "GrandeLASH™ - MD Lash Enhancing Serum",
       "heroImage": "https://www.sephora.com/productimages/sku/s1923275-main-grid.jpg",
       "image135": "https://www.sephora.com/productimages/sku/s1923275-main-grid.jpg",
@@ -259,7 +258,7 @@
     {
       "id": 14,
       "brandName": "Supergoop!",
-      "cat" : "ss",
+      "cat": "ss",
       "displayName": "Unseen Sunscreen SPF 40 PA+++",
       "heroImage": "https://www.sephora.com/productimages/sku/s2315935-main-grid.jpg?pb=2020-03-sephora-clean-2019",
       "image135": "https://www.sephora.com/productimages/sku/s2315935-main-grid.jpg?pb=2020-03-sephora-clean-2019",
@@ -274,7 +273,7 @@
     {
       "id": 15,
       "brandName": "Dior",
-
+      "cat": "lip",
       "displayName": "Dior Addict Lip Glow",
       "heroImage": "https://www.sephora.com/productimages/sku/s2579340-main-grid.jpg",
       "image135": "https://www.sephora.com/productimages/sku/s2579340-main-grid.jpg",
@@ -289,7 +288,7 @@
     {
       "id": 16,
       "brandName": "KVD Beauty",
-      "cat" : "foundation",
+      "cat": "foundation",
       "displayName": "Lock-It Refillable Mattifying Pressed Finishing Powder",
       "heroImage": "https://www.sephora.com/productimages/sku/s1914472-main-grid.jpg",
       "image135": "https://www.sephora.com/productimages/sku/s1914472-main-grid.jpg",
@@ -304,7 +303,7 @@
     {
       "id": 17,
       "brandName": "ILIA",
-      "cat" : "foundation",
+      "cat": "foundation",
       "displayName": "Super Serum Skin Tint SPF 40 Foundation",
       "heroImage": "https://www.sephora.com/productimages/sku/s2333607-main-grid.jpg?pb=allure-clean-2020",
       "image135": "https://www.sephora.com/productimages/sku/s2333607-main-grid.jpg?pb=allure-clean-2020",
@@ -319,7 +318,7 @@
     {
       "id": 18,
       "brandName": "Rare Beauty by Selena Gomez",
-
+      "cat": "blush",
       "displayName": "Soft Pinch Liquid Blush",
       "heroImage": "https://www.sephora.com/productimages/sku/s2518959-main-grid.jpg",
       "image135": "https://www.sephora.com/productimages/sku/s2518959-main-grid.jpg",
@@ -334,7 +333,7 @@
     {
       "id": 19,
       "brandName": "Charlotte Tilbury",
-      "cat" : "foundation",
+      "cat": "foundation",
       "displayName": "Airbrush Flawless Finish Setting Powder",
       "heroImage": "https://www.sephora.com/productimages/sku/s2116333-main-grid.jpg",
       "image135": "https://www.sephora.com/productimages/sku/s2116333-main-grid.jpg",
@@ -360,11 +359,10 @@
       "reviews": "11138",
       "targetUrl": "/product/stay-all-day-waterproof-liquid-eye-liner-P253818"
     },
-
     {
       "id": 21,
       "brandName": "NARS",
-
+      "cat": "lip",
       "displayName": "Mini Radiant Creamy Concealer",
       "heroImage": "https://www.sephora.com/productimages/sku/s2245363-main-grid.jpg",
       "image135": "https://www.sephora.com/productimages/sku/s2245363-main-grid.jpg",
@@ -375,13 +373,283 @@
       "rating": "4.1659",
       "reviews": "1501",
       "targetUrl": "/product/radiant-creamy-concealer-mini-P422077"
+    },
+    {
+      "id": 22,
+      "brandName": "NARS",
+      "cat": "lip",
+      "displayName": "Mini Radiant Lipcolor",
+      "heroImage": "https://th.bing.com/th/id/OIP.H4tyYvLTprbnur-m0jD0zgHaJ7?pid=ImgDet&w=917&h=1230&rs=1",
+      "image135": "https://www.sephora.com/productimages/sku/s2245363-main-grid.jpg",
+      "image250": "https://www.sephora.com/productimages/sku/s2245363-main-hero.jpg",
+      "image450": "https://th.bing.com/th/id/OIP.H4tyYvLTprbnur-m0jD0zgHaJ7?pid=ImgDet&w=917&h=1230&rs=1",
+      "moreColors": 30,
+      "productId": "P422077",
+      "rating": "4.1659",
+      "reviews": "1501",
+      "targetUrl": "/product/radiant-creamy-concealer-mini-P422077"
+    },
+    {
+      "id": 23,
+      "brandName": "NARS",
+      "cat": "blush",
+      "displayName": "Mini Radiant blush for you dailly makeup",
+      "heroImage": "https://th.bing.com/th/id/OIP.whjGU4EoZ0_IsIa7A1e-UAHaE9?w=292&h=195&c=7&r=0&o=5&dpr=1.5&pid=1.7",
+      "image135": "https://www.sephora.com/productimages/sku/s2245363-main-grid.jpg",
+      "image250": "https://www.sephora.com/productimages/sku/s2245363-main-hero.jpg",
+      "image450": "https://th.bing.com/th/id/OIP.whjGU4EoZ0_IsIa7A1e-UAHaE9?w=292&h=195&c=7&r=0&o=5&dpr=1.5&pid=1.7",
+      "moreColors": 43,
+      "productId": "P422077",
+      "rating": "4.1659",
+      "reviews": "1501",
+      "targetUrl": "/product/radiant-creamy-concealer-mini-P422077"
+    },
+    {
+      "id": 24,
+      "brandName": "NARS",
+      "cat": "blush",
+      "displayName": "Sephora primium blush me up kit",
+      "heroImage": "https://2.bp.blogspot.com/-xKfFTdU0mEc/UmY96Ao4vYI/AAAAAAAAAkE/8HgL7baEO_A/s1600/006.JPG",
+      "image135": "https://www.sephora.com/productimages/sku/s2245363-main-grid.jpg",
+      "image250": "https://www.sephora.com/productimages/sku/s2245363-main-hero.jpg",
+      "image450": "https://2.bp.blogspot.com/-xKfFTdU0mEc/UmY96Ao4vYI/AAAAAAAAAkE/8HgL7baEO_A/s1600/006.JPG",
+      "moreColors": 43,
+      "productId": "P422077",
+      "rating": "4.1659",
+      "reviews": "1501",
+      "targetUrl": "/product/radiant-creamy-concealer-mini-P422077"
+    },
+    {
+      "id": 25,
+      "brandName": "NARS",
+      "cat": "blush",
+      "displayName": "Sephora collection make you blush ",
+      "heroImage": "https://th.bing.com/th/id/OIP.cZ7ANMYHZqvV0Oxl8Z987gHaHG?pid=ImgDet&rs=1",
+      "image135": "https://www.sephora.com/productimages/sku/s2245363-main-grid.jpg",
+      "image250": "https://www.sephora.com/productimages/sku/s2245363-main-hero.jpg",
+      "image450": "https://th.bing.com/th/id/OIP.cZ7ANMYHZqvV0Oxl8Z987gHaHG?pid=ImgDet&rs=1",
+      "moreColors": 23,
+      "productId": "P422077",
+      "rating": "4.1659",
+      "reviews": "1501",
+      "targetUrl": "/product/radiant-creamy-concealer-mini-P422077"
+    },
+    {
+      "id": 26,
+      "brandName": "NARS",
+      "cat": "blush",
+      "displayName": "Mini Radiant Lipcolor",
+      "heroImage": "https://th.bing.com/th/id/OIP.whjGU4EoZ0_IsIa7A1e-UAHaE9?w=292&h=195&c=7&r=0&o=5&dpr=1.5&pid=1.7",
+      "image135": "https://www.sephora.com/productimages/sku/s2245363-main-grid.jpg",
+      "image250": "https://www.sephora.com/productimages/sku/s2245363-main-hero.jpg",
+      "image450": "https://th.bing.com/th/id/OIP.whjGU4EoZ0_IsIa7A1e-UAHaE9?w=292&h=195&c=7&r=0&o=5&dpr=1.5&pid=1.7",
+      "moreColors": 43,
+      "productId": "P422077",
+      "rating": "4.1659",
+      "reviews": "1501",
+      "targetUrl": "/product/radiant-creamy-concealer-mini-P422077"
+    },
+    {
+      "id": 27,
+      "brandName": "NARS",
+      "cat": "blush",
+      "displayName": "blush you cheeks with sephora products",
+      "heroImage": "https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011293290-1000011293289_01-2100.jpg",
+      "image135": "https://www.sephora.com/productimages/sku/s2245363-main-grid.jpg",
+      "image250": "https://www.sephora.com/productimages/sku/s2245363-main-hero.jpg",
+      "image450": "https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011293290-1000011293289_01-2100.jpg",
+      "moreColors": 43,
+      "productId": "P422077",
+      "rating": "4.1659",
+      "reviews": "1501",
+      "targetUrl": "/product/radiant-creamy-concealer-mini-P422077"
+    },
+    {
+      "id": 28,
+      "brandName": "Natasha Denona",
+      "cat": "eyeshadow",
+      "displayName": "Glam Eyeshadow Palette",
+      "heroImage": "https://www.sephora.com/productimages/sku/s2378313-main-grid.jpg",
+      "image135": "https://www.sephora.com/productimages/sku/s2378313-main-grid.jpg",
+      "image250": "https://www.sephora.com/productimages/sku/s2378313-main-hero.jpg",
+      "image450": "https://www.sephora.com/productimages/sku/s2378313-main-Lhero.jpg",
+      "productId": "P461188",
+      "moreColors": 35,
+      "rating": "4.5212",
+      "reviews": "495",
+      "targetUrl": "/product/natasha-denona-glam-eyeshadow-palette-P461188"
+    },
+    {
+      "id": 29,
+      "brandName": "Natasha Denona",
+      "cat": "eyeshadow",
+      "displayName": "Glam Eyeshadow Palette",
+      "heroImage": "https://www.sephora.com/productimages/sku/s2378313-main-grid.jpg",
+      "image135": "https://www.sephora.com/productimages/sku/s2378313-main-grid.jpg",
+      "image250": "https://www.sephora.com/productimages/sku/s2378313-main-hero.jpg",
+      "image450": "https://www.sephora.com/productimages/sku/s2378313-main-Lhero.jpg",
+      "productId": "P461188",
+      "moreColors": 35,
+      "rating": "4.5212",
+      "reviews": "495",
+      "targetUrl": "/product/natasha-denona-glam-eyeshadow-palette-P461188"
+    },
+    {
+      "id": 30,
+      "brandName": "Natasha Denona",
+      "cat": "eyeshadow",
+      "displayName": "Glam Eyeshadow Palette",
+      "heroImage": "https://www.sephora.com/productimages/sku/s2378313-main-grid.jpg",
+      "image135": "https://www.sephora.com/productimages/sku/s2378313-main-grid.jpg",
+      "image250": "https://www.sephora.com/productimages/sku/s2378313-main-hero.jpg",
+      "image450": "https://www.sephora.com/productimages/sku/s2378313-main-Lhero.jpg",
+      "productId": "P461188",
+      "moreColors": 35,
+      "rating": "4.5212",
+      "reviews": "495",
+      "targetUrl": "/product/natasha-denona-glam-eyeshadow-palette-P461188"
+    },
+    {
+      "id": 31,
+      "brandName": "Natasha Denona",
+      "cat": "ckeekhighlighter",
+      "displayName": "Glam Cheek Highlighter with sparkle glow for party makeup",
+      "heroImage": " https://i.pinimg.com/736x/01/80/cc/0180cc5f4f322c8364ce1f3b9671e1e4.jpg",
+      "image135": "https://www.sephora.com/productimages/sku/s2378313-main-grid.jpg",
+      "image250": "https://www.sephora.com/productimages/sku/s2378313-main-hero.jpg",
+      "image450": " https://i.pinimg.com/736x/01/80/cc/0180cc5f4f322c8364ce1f3b9671e1e4.jpg",
+      "productId": "P461188",
+      "moreColors": 35,
+      "rating": "4.5212",
+      "reviews": "495",
+      "targetUrl": "/product/natasha-denona-glam-eyeshadow-palette-P461188"
+    },
+    {
+      "id": 32,
+      "brandName": "Natasha Denona",
+      "cat": "ckeekhighlighter",
+      "displayName": "Glam Cheek Highlighter with sparkle glow for party makeup",
+      "heroImage": "https://www.temptalia.com/wp-content/uploads/2017/06/becca_topaz-flashes-gilt_001_product-350x350.jpg",
+      "image135": "https://www.sephora.com/productimages/sku/s2378313-main-grid.jpg",
+      "image250": "https://www.sephora.com/productimages/sku/s2378313-main-hero.jpg",
+      "image450": "https://www.temptalia.com/wp-content/uploads/2017/06/becca_topaz-flashes-gilt_001_product-350x350.jpg",
+      "productId": "P461188",
+      "moreColors": 35,
+      "rating": "4.5212",
+      "reviews": "495",
+      "targetUrl": "/product/natasha-denona-glam-eyeshadow-palette-P461188"
+    },
+    {
+      "id": 33,
+      "brandName": "Natasha Denona",
+      "cat": "ckeekhighlighter",
+      "displayName": "Glam Cheek Highlighter with sparkle glow for party makeup",
+      "heroImage": "https://i.pinimg.com/originals/fa/ae/ef/faaeef3953120d896a9cef1c51ab09f5.jpg",
+      "image135": "https://www.sephora.com/productimages/sku/s2378313-main-grid.jpg",
+      "image250": "https://www.sephora.com/productimages/sku/s2378313-main-hero.jpg",
+      "image450": "https://i.pinimg.com/originals/fa/ae/ef/faaeef3953120d896a9cef1c51ab09f5.jpg",
+      "productId": "P461188",
+      "moreColors": 35,
+      "rating": "4.5212",
+      "reviews": "495",
+      "targetUrl": "/product/natasha-denona-glam-eyeshadow-palette-P461188"
     }
   ],
-
-  "foundation" : [
+  "cartdata": [
     {
-
+      "id": 25,
+      "brandName": "NARS",
+      "cat": "blush",
+      "displayName": "Sephora collection make you blush ",
+      "heroImage": "https://th.bing.com/th/id/OIP.cZ7ANMYHZqvV0Oxl8Z987gHaHG?pid=ImgDet&rs=1",
+      "image135": "https://www.sephora.com/productimages/sku/s2245363-main-grid.jpg",
+      "image250": "https://www.sephora.com/productimages/sku/s2245363-main-hero.jpg",
+      "image450": "https://th.bing.com/th/id/OIP.cZ7ANMYHZqvV0Oxl8Z987gHaHG?pid=ImgDet&rs=1",
+      "moreColors": 23,
+      "productId": "P422077",
+      "rating": "4.1659",
+      "reviews": "1501",
+      "targetUrl": "/product/radiant-creamy-concealer-mini-P422077",
+      "_id": 1678264767214,
+      "count": 1
+    },
+    {
+      "id": 2,
+      "brandName": "Charlotte Tilbury",
+      "cat": "foundation",
+      "displayName": "Hollywood Flawless Filter",
+      "heroImage": "https://www.sephora.com/productimages/sku/s2419786-main-grid.jpg",
+      "image135": "https://www.sephora.com/productimages/sku/s2419786-main-grid.jpg",
+      "image250": "https://www.sephora.com/productimages/sku/s2419786-main-hero.jpg",
+      "image450": "https://www.sephora.com/productimages/sku/s2419786-main-Lhero.jpg",
+      "moreColors": 15,
+      "productId": "P434104",
+      "rating": "4.4431",
+      "reviews": "1794",
+      "targetUrl": "/product/hollywood-flawless-filter-P434104?skuId=2419786",
+      "_id": 1678265116182,
+      "count": 1
+    },
+    {
+      "id": 4,
+      "brandName": "Lancôme",
+      "cat": "lip",
+      "displayName": "L'Absolu Lacquer Long-Lasting Liquid Lipstick",
+      "heroImage": "https://www.sephora.com/productimages/sku/s2067544-main-grid.jpg",
+      "image135": "https://www.sephora.com/productimages/sku/s2067544-main-grid.jpg",
+      "image250": "https://www.sephora.com/productimages/sku/s2067544-main-hero.jpg",
+      "image450": "https://www.sephora.com/productimages/sku/s2067544-main-Lhero.jpg",
+      "moreColors": 73,
+      "productId": "P431511",
+      "rating": "4.2798",
+      "reviews": "1240",
+      "targetUrl": "/product/l-absolu-lacquer-P431511",
+      "_id": 1678265151998,
+      "count": 1
+    },
+    {
+      "id": 3,
+      "brandName": "Bobbi Brown",
+      "cat": "ss",
+      "displayName": "Vitamin Enriched Face Base Priming Moisturizer",
+      "heroImage": "https://www.sephora.com/productimages/sku/s1292820-main-grid.jpg",
+      "image135": "https://www.sephora.com/productimages/sku/s1292820-main-grid.jpg",
+      "image250": "https://www.sephora.com/productimages/sku/s1292820-main-hero.jpg",
+      "image450": "https://www.sephora.com/productimages/sku/s1292820-main-Lhero.jpg",
+      "moreColors": 55,
+      "productId": "P270594",
+      "rating": "4.5404",
+      "reviews": "2524",
+      "targetUrl": "/product/vitamin-enriched-face-base-P270594",
+      "_id": 1678265452454,
+      "count": 1
+    },
+    {
+      "_id": 1678265555808,
+      "count": 1,
+      "id": 26
+    },
+    {
+      "_id": 1678265555813,
+      "count": 1,
+      "id": 27
+    },
+    {
+      "id": 15,
+      "brandName": "Dior",
+      "cat": "lip",
+      "displayName": "Dior Addict Lip Glow",
+      "heroImage": "https://www.sephora.com/productimages/sku/s2579340-main-grid.jpg",
+      "image135": "https://www.sephora.com/productimages/sku/s2579340-main-grid.jpg",
+      "image250": "https://www.sephora.com/productimages/sku/s2579340-main-hero.jpg",
+      "image450": "https://www.sephora.com/productimages/sku/s2579340-main-Lhero.jpg",
+      "moreColors": 11,
+      "productId": "P236816",
+      "rating": "4.4314",
+      "reviews": "1699",
+      "targetUrl": "/product/dior-addict-lip-glow-color-reviver-balm-P236816?skuId=2579340",
+      "_id": 1678265753965,
+      "count": 1
     }
   ]
-
 }

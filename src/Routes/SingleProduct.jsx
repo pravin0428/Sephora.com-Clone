@@ -15,23 +15,36 @@ import {
     VisuallyHidden,
     List,
     ListItem,
+    useToast
   } from '@chakra-ui/react';
 import { useEffect, useState } from 'react';
   import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
   import { MdLocalShipping } from 'react-icons/md';
-import { useParams } from 'react-router-dom';
-
+import { useNavigate, useParams } from 'react-router-dom';
+import axios from "axios"
 async function getData(id) {
-    let res = await fetch(`https://sephoradatabse.onrender.com/makeup/${id}`)
+    let res = await fetch(`http://localhost:3001/makeup/${id}`)
     console.log(res);
     let data = await res.json()
     return data
     console.log(data);
 }
 
+async function getCartData() {
+  let res = await fetch(`http://localhost:3001/cartdata`)
+  console.log(res);
+  let data = await res.json()
+  return data
+  // console.log(data);
+}
+
    function SingleProduct() {
     const [data , setData] = useState({})
+    // const[addCount , setAddCount] = useState(null)
+    const[ cartData , setCartData] = useState([])
     const {id} = useParams()
+    const toast = useToast()
+    const navigate = useNavigate()
 // console.log(data.currentSku.badgeAltText);
 
     console.log(id)
@@ -42,6 +55,45 @@ async function getData(id) {
             setData(res)
         })
     },[])
+
+    useEffect(() => {
+      getCartData().then((res) => {
+        console.log(res)
+        setCartData(res)
+    })
+    },[])
+
+    const handlePost = () => {
+      if(cartData.includes(cartData.id)){
+        toast({
+          title: 'Aredy exist',
+          description: "We've created your account for you.",
+          status: 'success',
+          duration: 9000,
+          isClosable: true,
+        })
+        navigate("/makeup") 
+      }else{
+        axios.post("http://localhost:3001/cartdata",{
+          ...data , 
+          _id : Date.now(),
+          count : 1
+        })
+        toast({
+          title: 'Suceess',
+          description: "Item Added to Cart",
+          status: 'success',
+          duration: 9000,
+          isClosable: true,
+        })
+      //  setAddCount((count) => count+1)
+      }
+     
+    }
+
+    //  useEffect(()=>{
+    //   setAddCount(null)
+    //  },[id])
 
     return (
       <Container maxW={'7xl'}>
@@ -183,6 +235,8 @@ async function getData(id) {
             </Stack>
   
             <Button
+            onClick={handlePost}
+            //  disabled={addCount === 1}
               rounded={'none'}
               w={'full'}
               mt={8}
