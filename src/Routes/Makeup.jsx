@@ -60,7 +60,7 @@ setMakeup(result)
  
   useEffect(() =>{
     setLoading(true)
-    fetch(`http://localhost:3001/makeup?_sort=moreColors&_order=${sortorder}`).then((res) => res.json())
+    fetch(`https://sephoradatabse.onrender.com/makeup?_sort=moreColors&_order=${sortorder}`).then((res) => res.json())
  //   fetch(`https://database-pravin.herokuapp.com/makeup`).then((res) => res.json())
   .then((res) =>{
     //  console.log(res)

@@ -23,7 +23,7 @@ import { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import axios from "axios"
 async function getData(id) {
-    let res = await fetch(`http://localhost:3001/makeup/${id}`)
+    let res = await fetch(`https://sephoradatabse.onrender.com/makeup/${id}`)
     console.log(res);
     let data = await res.json()
     return data
@@ -31,7 +31,7 @@ async function getData(id) {
 }
 
 async function getCartData() {
-  let res = await fetch(`http://localhost:3001/cartdata`)
+  let res = await fetch(`https://sephoradatabse.onrender.com/cartdata`)
   console.log(res);
   let data = await res.json()
   return data
@@ -69,12 +69,12 @@ async function getCartData() {
           title: 'Aredy exist',
           description: "We've created your account for you.",
           status: 'success',
-          duration: 9000,
+          duration: 2000,
           isClosable: true,
         })
         navigate("/makeup") 
       }else{
-        axios.post("http://localhost:3001/cartdata",{
+        axios.post("https://sephoradatabse.onrender.com/cartdata",{
           ...data , 
           _id : Date.now(),
           count : 1
@@ -83,7 +83,7 @@ async function getCartData() {
           title: 'Suceess',
           description: "Item Added to Cart",
           status: 'success',
-          duration: 9000,
+          duration: 2000,
           isClosable: true,
         })
       //  setAddCount((count) => count+1)
