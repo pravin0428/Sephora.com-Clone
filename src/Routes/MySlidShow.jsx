@@ -1,4 +1,5 @@
- import React from "react"
+ import { Container } from "@chakra-ui/react";
+import React from "react"
  
 const colors = [ 
         {    
@@ -59,7 +60,8 @@ function Slideshow() {
     }, [index]);
   
     return (
-      <>
+  
+      <Container maxW="full" > 
       <div className="slideshow">
         <div
           className="slideshowSlider"
@@ -84,7 +86,8 @@ function Slideshow() {
           ))}
         </div>
       </div>
-      </>
+      </Container>
+   
     );
   }
   

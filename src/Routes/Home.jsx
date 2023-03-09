@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link ,  Image, HStack, Box, Input, Button, Container, Stack, Heading , Text} from "@chakra-ui/react";
+import { Link ,  Image, HStack, Box, Input, Button, Container, Stack, Heading , Text, Grid, useBreakpointValue, Flex} from "@chakra-ui/react";
 import RowDataDis from './RowDataDis';
 import Video from './Video';
 import { useEffect } from "react";
@@ -11,7 +11,7 @@ import Slideshow from './MySlidShow';
 function Home() {
 
     const[dataof11row , setDataof11row] = useState([])
-
+    const colSize = useBreakpointValue({ base: "100%", md: "50%" })
     useEffect(()=>{
      fetch("https://database-pravin.herokuapp.com/projectRow11").then((res)=> res.json())
      .then((res) => {
@@ -27,14 +27,16 @@ function Home() {
 
  {/* fifth row */}
 
- <Box className="row5ht_box" >
-    <button className="back_btn" >STEALS & DEALS</button>
-    <button className="back_btn" >BEAUTY MINIS UNDER ₹999 </button>
-    <button className="back_btn" >EVERYDAY ESSENCIAL</button>
-    <button className="back_btn" >TRENDING NOW</button>
-    <button className="back_btn" >EDITORS PICKS</button>
-    <button className="back_btn" >TOP FREGRANCES</button>
- </Box>
+ <Container maxW='550%' mt="15px" >
+<Grid templateColumns={{ base: "repeat(1, 1fr)" ,sm: "repeat(2, 1fr)", md: "repeat(3, 1fr)" }} gap={4} p={4}>
+        <Button backgroundColor="blackAlpha.800" color="white" >STEALS & DEALS</Button>
+        <Button backgroundColor="blackAlpha.800" color="white" >BEAUTY MINIS UNDER ₹999</Button>
+        <Button backgroundColor="blackAlpha.800" color="white" >EVERYDAY ESSENTIAL</Button>
+        <Button backgroundColor="blackAlpha.800" color="white" >TRENDING NOW</Button>
+        <Button backgroundColor="blackAlpha.800" color="white" >EDITORS PICKS</Button>
+        <Button backgroundColor="blackAlpha.800" color="white" >TOP FREGRANCES</Button>
+      </Grid>
+    </Container>
   
   {/* 6th row */}
   <Heading textAlign="center" mt="30px" mb="15px" >Brand Of The Week</Heading>
@@ -46,12 +48,12 @@ function Home() {
 
 {/* 7th row */}
 <Container maxW='550%' mt="15px" >
-   <Box className="row7th_img" >
+<Grid templateColumns={{ base: "repeat(1, 1fr)" ,sm: "repeat(2, 1fr)", md: "repeat(4, 1fr)" }} gap={4} p={4}>
    <Box> <Image src="https://logan.nnnow.com/content/dam/nnnow-project/16-aug-2022/se/Bestsellers.jpg" /> </Box>
    <Box> <Image src="https://logan.nnnow.com/content/dam/nnnow-project/16-aug-2022/se/Bodycare.jpg" /> </Box>
    <Box> <Image src="https://logan.nnnow.com/content/dam/nnnow-project/16-aug-2022/se/Facial.jpg" /> </Box>
    <Box> <Image src="https://logan.nnnow.com/content/dam/nnnow-project/16-aug-2022/se/Makeup.jpg" /> </Box>
-   </Box>
+   </Grid>
    </Container>
 
 {/* 8th row */}
@@ -59,31 +61,36 @@ function Home() {
     <Image src="https://logan.nnnow.com/content/dam/nnnow-project/16-march-2022/justlanded.jpg" />
    </Stack>
     
-  <Box width="100%" display="flex" justifyContent="space-between" >
-  <Box display="flex" width="50%"  >
+    {/* ////// */}
+   <Box width="100%" display="flex" flexWrap="wrap" justifyContent="space-between" >
+      <Box display="flex" width={colSize} mb={{ base: "20px", md: "0" }}  >
 
-   <Box textAlign="center" ><Image className="modal_img" src="https://cdn16.nnnow.com/web-images/medium/styles/7C1N04O5PPK/1655201666947/1.jpg" />
-   <Text fontWeight="700" fontSize="14px" >HUDA BEAUTY</Text>
-   <p>Easy Bake Loose Setting Powder Mini-Banana Bread</p>
-   <h5>Rs 1,650</h5>
-   </Box>  
-   <Box textAlign="center" ><Image className="modal_img" src="https://cdn08.nnnow.com/web-images/medium/styles/2PZJ62MD2SN/1655201666969/1.jpg" />
-   <Text fontWeight="700" fontSize="14px" >HUDA BEAUTY</Text>
-   <p >Easy Bake Loose Setting Powder Mini-Banana Bread</p>
-   <h5>Rs 1,650</h5>
-   </Box>  
-   <Box textAlign="center" ><Image className="modal_img" src="https://cdn04.nnnow.com/web-images/medium/styles/G1IEBAOC0JO/1657865337810/1.jpg" />
-   <Text fontWeight="700" fontSize="14px" >HUDA BEAUTY</Text>
-   <p  >Easy Bake Loose Setting Powder Mini-Banana Bread</p>
-   <h5>Rs 1,650</h5>
-   </Box>  
-  </Box>
+        <Box textAlign="center" width="100%" mb="10px" >
+          <Image className="modal_img" src="https://cdn16.nnnow.com/web-images/medium/styles/7C1N04O5PPK/1655201666947/1.jpg" />
+          <Text fontWeight="700" fontSize="14px" >HUDA BEAUTY</Text>
+          <p>Easy Bake Loose Setting Powder Mini-Banana Bread</p>
+          <h5>Rs 1,650</h5>
+        </Box>  
+        <Box textAlign="center" width="100%" mb="10px" >
+          <Image className="modal_img" src="https://cdn08.nnnow.com/web-images/medium/styles/2PZJ62MD2SN/1655201666969/1.jpg" />
+          <Text fontWeight="700" fontSize="14px" >HUDA BEAUTY</Text>
+          <p >Easy Bake Loose Setting Powder Mini-Banana Bread</p>
+          <h5>Rs 1,650</h5>
+        </Box>  
+        <Box textAlign="center" width="100%" mb="10px" >
+          <Image className="modal_img" src="https://cdn04.nnnow.com/web-images/medium/styles/G1IEBAOC0JO/1657865337810/1.jpg" />
+          <Text fontWeight="700" fontSize="14px" >HUDA BEAUTY</Text>
+          <p  >Easy Bake Loose Setting Powder Mini-Banana Bread</p>
+          <h5>Rs 1,650</h5>
+        </Box>  
+      </Box>
 
-  {/* video */}
-  <Box   width="50%">
-    <Video/>
-  </Box>
-  </Box>  
+      {/* video */}
+      <Box width={colSize}>
+        <Video/>
+      </Box>
+    </Box>
+    {/* ////////// */}
 
 {/* 9th row */}
 <Stack mt="50px" textAlign="center" >
@@ -91,12 +98,12 @@ function Home() {
    </Stack>
 
    <Container maxW='550%' mt="15px" >
-   <Box className="row7th_img" >
+   <Grid templateColumns={{ base: "repeat(1, 1fr)" , md: "repeat(3, 1fr)" }} gap={4} p={4}>
    <Box> <Image src="https://logan.nnnow.com/content/dam/nnnow-project/06-july-2022/Sephora_ContentP-Story_CreamyConcealers.jpg" alt="img9" /> </Box>
    <Box> <Image src="https://logan.nnnow.com/content/dam/nnnow-project/06-july-2022/Sephora_ContentP-Story_MagicalMascaras.jpg" alt="img9" /> </Box>
    <Box> <Image src="https://logan.nnnow.com/content/dam/nnnow-project/06-july-2022/Sephora_ContentP-Story_TrendingTints.jpg" alt="img9" /> </Box>
     
-   </Box>
+   </Grid>
    </Container>
 
    {/* 10 row */}
@@ -155,25 +162,33 @@ function Home() {
 
 {/* 1st in 13 */}
 
- <Container maxW='550%' mt="15px" >
-   <Box className="row7th_img" >
-   <Box> <Image src="https://logan.nnnow.com/content/dam/nnnow-project/31-mar-2022/se/SC_NOTB_BigByDefinitionMascara.jpg" alt="img13" /> </Box>
-   <Box> <Image src="https://logan.nnnow.com/content/dam/nnnow-project/31-mar-2022/se/SC_NOTB_OutrageousPlumpLipgloss.jpg" alt="img13" /> </Box>
-   <Box> <Image src="https://logan.nnnow.com/content/dam/nnnow-project/14-june-2022/se/MUFE_NOTB_Ultrasettingpowderlaunch.jpg" alt="img13" /> </Box>
+ <Container maxW="full" mt="15px" >
+   <Grid templateColumns={{ base: "repeat(1, 1fr)" , md: "repeat(3, 1fr)" }} gap={4} p={4}>
+   <Image src="https://logan.nnnow.com/content/dam/nnnow-project/31-mar-2022/se/SC_NOTB_BigByDefinitionMascara.jpg" alt="img13" />  
+   <Image src="https://logan.nnnow.com/content/dam/nnnow-project/31-mar-2022/se/SC_NOTB_OutrageousPlumpLipgloss.jpg" alt="img13" />  
+    <Image src="https://logan.nnnow.com/content/dam/nnnow-project/14-june-2022/se/MUFE_NOTB_Ultrasettingpowderlaunch.jpg" alt="img13" />  
+    </Grid>
     
-   </Box>
    </Container>
 
 {/* 2nd in 13 */}
 
-<Container maxW='550%' mt="15px" >
+{/* <Container maxW='550%' mt="15px" >
    <Box className="row7th_img" >
    <Box> <Image src="https://logan.nnnow.com/content/dam/nnnow-project/25-july-2022/ABH_NOTB_LIpstickandLipLiner.jpg" alt="img13" /> </Box>
    <Box> <Image src="https://logan.nnnow.com/content/dam/nnnow-project/18-aug-2022/Guerlain_NOTB_Sunkissedpowder2.jpg" alt="img13" /> </Box>
    <Box> <Image src="https://logan.nnnow.com/content/dam/nnnow-project/28-june-2022/Givenchy_NOTB.jpg" alt="img13" /> </Box>
     
    </Box>
-   </Container>
+   </Container> */}
+
+<Container maxW="full" mt="15px">
+  <Grid templateColumns={{ base: "repeat(1, 1fr)" , md: "repeat(3, 1fr)" }} gap={4}>
+    <Image src="https://logan.nnnow.com/content/dam/nnnow-project/25-july-2022/ABH_NOTB_LIpstickandLipLiner.jpg" alt="img13" />
+    <Image src="https://logan.nnnow.com/content/dam/nnnow-project/18-aug-2022/Guerlain_NOTB_Sunkissedpowder2.jpg" alt="img13" />
+    <Image src="https://logan.nnnow.com/content/dam/nnnow-project/28-june-2022/Givenchy_NOTB.jpg" alt="img13" />
+  </Grid>
+</Container>
 
    {/* 14 row */}
 
@@ -183,13 +198,12 @@ function Home() {
    </Box>
    </Container>
 
-   <Container maxW='550%' mt="15px" >
-   <Box className="row7th_img" >
+   <Container maxW='full' mt="15px" >
+   <Grid templateColumns={{ base: "repeat(1, 1fr)" , md: "repeat(3, 1fr)" }} gap={4} p={4}>
    <Box> <Image src="https://logan.nnnow.com/content/dam/nnnow-project/23-march-2022/se-blog/Sephora_MakingaLook_BlogCoverTileOption02.jpg" alt="img13" /> </Box>
    <Box> <Image src="https://logan.nnnow.com/content/dam/nnnow-project/24dec19/23DEC19_BLOG3.jpg" alt="img13" /> </Box>
    <Box> <Image src="https://logan.nnnow.com/content/dam/nnnow-project/24dec19/23DEC19_BLOG4.jpg" alt="img13" /> </Box>
-    
-   </Box>
+    </Grid>
    </Container>
 
     </>

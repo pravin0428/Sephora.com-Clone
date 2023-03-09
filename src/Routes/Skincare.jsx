@@ -130,23 +130,14 @@ const [makeup , setMakeup] = useState([])
 </Container>
 
 
-    <Box className='makeupBox' overflow="hidden"  width="70%" ml="320px" mt="-190px" minChildWidth="200px" spacing="20px">
+    <Box>
         {
         makeup &&
           makeup.map((elem , index) => (
-            <Stack key={index}>
-              <Box >
-              {/* onClick={handleModalComp} */}
-                <Img src={elem.prod_img} />
-                <Text color = "rgb(213, 0, 50)" fontWeight="700" fontSize="13px" > {elem.mode} </Text>
-                <Text fontWeight="750" fontSize="14px" > {elem.brand} </Text>
-                <Text > {elem.name} </Text>
-                <Text> {`Rs ${elem.price}`} </Text>
-                <Text> {elem.offer} </Text>
-              </Box>
-            </Stack>
+            <>
+            </>
           ))}
-        {/* <ModalComponent isOpen={isModalOpen} setIsOpe={setIsModalOpen} /> */}
+        
       </Box>
  
     </>

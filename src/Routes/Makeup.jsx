@@ -218,7 +218,7 @@ setMakeup(result)
 <Box width="76%"  margin={{base : "auto" , sm : 0 , md : 0 , lg : 0}} >
 
 <div className="dropdown">
-  <button className="dropbtn">Sorting</button>
+  <button style={{border : "2px solid black" , padding:"10px" , width:"150px" , marginLeft : "5px" , marginBottom : "5px" }}>Sorting</button>
   <div className="dropdown-content">
   <Text as="button" p={2} onClick={() => setSortOrder("asc")} > Price : ASC </Text>
  <br />
@@ -229,15 +229,14 @@ setMakeup(result)
   </div>
 </div>
 
-<SimpleGrid 
+ {loading ? (<Box marginTop="10px" fontWeight="bold" textAlign="center" fontSize="30px">Please wait data is Loading...</Box>) : (
+ 
+  <SimpleGrid 
 // border="1px solid black"
 minChildWidth="200px" spacing="40px">
         {makeup &&
           makeup.map((elem) => (
             <Stack key={elem.id}>
-
-
-
               <Box padding="15px" margin="auto" textAlign="center" boxShadow="md" width="95%" >
                 <Text> {`Brand : ${elem.brandName}`} </Text>
                 <br />
@@ -253,6 +252,8 @@ minChildWidth="200px" spacing="40px">
           ))}
        
       </SimpleGrid>
+   
+ )}
       </Box>
  
 

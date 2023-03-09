@@ -13,6 +13,8 @@ import {
   useColorModeValue,
   Stack,
   Image,
+  MenuItem,
+  MenuList,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import BaselineLocationOn from "react-md-icon/dist/BaselineLocationOn";
@@ -142,14 +144,14 @@ function Navbar() {
                 cursor={"pointer"}
                 minW={0}
               >
-                <Avatar size={"sm"} src={"p_image.jpeg"} />
+                <Avatar size={"sm"} />
               </MenuButton>
-              {/* <MenuList>
-                 <MenuItem   >Link 1</MenuItem>   
-                <MenuItem>Link 2</MenuItem>
-                <MenuDivider />
-                <MenuItem>Link 3</MenuItem>
-              </MenuList> */}
+              <MenuList>
+                 <Link to="#"><MenuItem>Regiter</MenuItem>  </Link>
+                 <MenuDivider /> 
+                 <Link to="login"> <MenuItem>Login</MenuItem></Link>
+               
+              </MenuList>
             </Menu>
           </Flex>
         </Flex>
@@ -167,45 +169,34 @@ function Navbar() {
               //  border="3px solid yellow"
             >
               <Link
-                to="skills"
-                smooth={true}
-                duration={1000}
-                // activeClass={styles.active}
-                spy={true}
-                hashSpy={true}
-              >
-                <div>Skills</div>
+                to="sale"
+               >
+                <div>Sale</div>
               </Link>
 
               <Link
-                to="projects"
+                to="makeup"
                 smooth={true}
                 duration={1000}
                 // activeClass={styles.active}
                 spy={true}
                 hashSpy={true}
               >
-                <div>Projects</div>
+                <div>Makeup</div>
               </Link>
 
               <Link
-                to="contact"
+                to="skincare"
                 smooth={true}
                 duration={1000}
                 // activeClass={styles.active}
                 spy={true}
                 hashSpy={true}
               >
-                <div>Contact</div>
+                <div>Skincare</div>
               </Link>
 
-              <a
-                href="https://drive.google.com/file/d/1mbjKLsqqQWV12ZTEy7g5OMC-pFPPujRf/view?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div>Resume</div>
-              </a>
+            
             </Stack>
           </Box>
         ) : null}

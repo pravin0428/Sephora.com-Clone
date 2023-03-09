@@ -9,86 +9,38 @@ import {
     SimpleGrid,
     Img,
     GridItem,
+    Button,
   } from '@chakra-ui/react';
+import { Link } from 'react-router-dom';
   import styles from './Card.module.css';
   const IMAGE =
     'https://images.unsplash.com/photo-1518051870910-a46e30d9db16?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80';
   
-  function Cards({image , brand , name , price}) {
+  function Cards({image , brand , name , price , id}) {
     return (
-    <Box className={styles.cardCont} >
-    <Box>
-   <img src={image} alt="proimg" />
-  
-    </Box>
-
-    </Box>
-    //   <Center border="2px solid red" 
-     
+      <SimpleGrid 
+// border="1px solid black"
+minChildWidth="200px" spacing="40px">
  
-    //   templateColumns='repeat(5, 1fr)'
-    //   >
-    //     <Box
-    //       role={'group'}
-    //       p={6}
-    //       maxW={'330px'}
-    //       w={'full'}
-    //       bg={useColorModeValue('white', 'gray.800')}
-    //       boxShadow={'2xl'}
-    //       rounded={'lg'}
-    //       pos={'relative'}
-    //       zIndex={1}
-    //       border="1px solid green"
-    //       >
-    //       <Box
-    //         rounded={'lg'}
-    //         mt={-12}
-    //         pos={'relative'}
-    //         height={'230px'}
-    //         _after={{
-    //           transition: 'all .3s ease',
-    //           content: '""',
-    //           w: 'full',
-    //           h: 'full',
-    //           pos: 'absolute',
-    //           top: 5,
-    //           left: 0,
-    //           backgroundImage: `url(${IMAGE})`,
-    //           filter: 'blur(15px)',
-    //           zIndex: -1,
-    //         }}
-    //         _groupHover={{
-    //           _after: {
-    //             filter: 'blur(20px)',
-    //           },
-    //         }}>
-    //         <Image
-    //           rounded={'lg'}
-    //           height={230}
-    //           width={282}
-    //           objectFit={'cover'}
-    //           src={image}
-    //         />
-    //       </Box>
-    //       <Stack pt={10} align={'center'}>
-    //         <Text color={'gray.500'} fontSize={'sm'} textTransform={'uppercase'}>
-    //           brand
-    //         </Text>
-    //         <Heading fontSize={'2xl'} fontFamily={'body'} fontWeight={500}>
-    //           Nice Chair, pink
-    //           {name}
-    //         </Heading>
-    //         <Stack direction={'row'} align={'center'}>
-    //           <Text fontWeight={800} fontSize={'xl'}>
-    //             ${price}
-    //           </Text>
-    //           <Text textDecoration={'line-through'} color={'gray.600'}>
-    //             {/* ${discount} */}
-    //           </Text>
-    //         </Stack>
-    //       </Stack>
-    //     </Box>
-    //   </Center>
+            <Stack >
+
+
+
+              <Box padding="15px" margin="auto" textAlign="center" boxShadow="md" width="95%" >
+                <Text> {`Brand : ${brand}`} </Text>
+                <br />
+                <Img margin="auto" src={image } />
+                {/* <Text overflow="hidden" > {elem.displayName} </Text> */}
+                <br />
+                <Text mb="10px" > {`$ ${price}`} </Text>
+               <Link to={`/makeup/${id}`} >
+               <Button>Details</Button>
+               </Link>
+              </Box>
+            </Stack>
+         
+       
+      </SimpleGrid>
     );
   }
 
