@@ -147,7 +147,7 @@ function Navbar() {
                 <Avatar size={"sm"} />
               </MenuButton>
               <MenuList>
-                 <Link to="#"><MenuItem>Regiter</MenuItem>  </Link>
+                 <Link to="register"><MenuItem>Regiter</MenuItem>  </Link>
                  <MenuDivider /> 
                  <Link to="login"> <MenuItem>Login</MenuItem></Link>
                

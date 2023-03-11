@@ -13,7 +13,7 @@ function Home() {
     const[dataof11row , setDataof11row] = useState([])
     const colSize = useBreakpointValue({ base: "100%", md: "50%" })
     useEffect(()=>{
-     fetch("https://database-pravin.herokuapp.com/projectRow11").then((res)=> res.json())
+     fetch("http://localhost:3001/projectRow11").then((res)=> res.json())
      .then((res) => {
          console.log(res)
          setDataof11row(res)

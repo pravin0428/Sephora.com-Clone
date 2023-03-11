@@ -1,307 +1,142 @@
-// import {  Container  } from '@chakra-ui/react'
-// import React, { useContext } from 'react'
-// import { useState } from 'react'
-// // import ModalComponent from "../Components/ModalComp" 
-//   import { useNavigate } from "react-router-dom"
-// import { AppContext } from '../Context/AppContext'
-// let arr = JSON.parse(localStorage.getItem("loginInfo")) || []
-
-// function Login() {
-//      const [mobNo , setMobNo] = useState([])
-//      const {loginUser} = useContext(AppContext)
-//   const navigate = useNavigate()
-
-// const handleSubmit = (e) =>{
-//     e.preventDefault()
-   
-//    arr.push(mobNo)
-//    localStorage.setItem("loginInfo",JSON.stringify(arr))
-//    navigate("/register")
-//    loginUser(mobNo)
-    
  
-// }
- 
-// // console.log(arr)
-// // console.log(mobNo)
-//   return (
-//     <>
-//     <Container textAlign="center" > 
-//      <form onSubmit={handleSubmit} >
-//         <h2>Login</h2>
-//         <br/>
-     
-//        <label>
-//         Enter Your Phone/Email 
-//         <br/>
-//         <input onChange={(e) => setMobNo(e.target.value)} value={mobNo} placeholder='enter email'/>
-//        </label>
-      
-//      <input type="submit" value="submit" /> 
-     
-//      </form>
-//      </Container>
-//     </>
-//   )
-// }
-
-// export default Login
 
 
-// import { Button, Img, Input } from "@chakra-ui/react";
-// import React, { useState } from "react";
- 
- 
-// function Login() {
-//   // React States
-//   const [errorMessages, setErrorMessages] = useState({});
-//   const [isSubmitted, setIsSubmitted] = useState(false);
- 
-//   // User Login info
-//   const database = [
-//     {
-//       username: "mohite461998@gmail.com",
-//       password: "1234"
-//     },
-//     {
-//       username: "user2",
-//       password: "pass2"
-//     }
-//   ];
-
-//   const errors = {
-//     uname: "invalid username",
-//     pass: "invalid password"
-//   };
-
-//   const handleSubmit = (event) => {
-//     //Prevent page reload
-//     event.preventDefault();
-
-//     var { uname, pass } = document.forms[0];
-
-//     // Find user login info
-//     const userData = database.find((user) => user.username === uname.value);
-
-//     // Compare user info
-//     if (userData) {
-//       if (userData.password !== pass.value) {
-//         // Invalid password
-//         setErrorMessages({ name: "pass", message: errors.pass });
-//       } else {
-//         setIsSubmitted(true);
-//       }
-//     } else {
-//       // Username not found
-//       setErrorMessages({ name: "uname", message: errors.uname });
-//     }
-//   };
-
-//   // Generate JSX code for error message
-//   const renderErrorMessage = (name) =>
-//     name === errorMessages.name && (
-//       <div className="error">{errorMessages.message}</div>
-//     );
-
-//   // JSX code for login form
-//   const renderForm = (
-//     <div >
-//       <form onSubmit={handleSubmit}>
-//         <div  >
-
-//         <p style={{fontWeight: "lighter" , fontSize:"15px"  }} >Enter Your Phone/Email</p>
-//   <Input width="100%" borderRadius="0px" type="text" name="uname" required  />
-//   <br />
-//   <br />
-//           {/* <label>Username </label>
-//           <input type="text" name="uname" required /> */}
-//           {renderErrorMessage("uname")}
-//         </div>
-//         <div className="input-container">
-//         <Input width="100%" borderRadius="0px" type="password" name="pass" required   />
-//           {/* <label>Password </label>
-//           <input type="password" name="pass" required /> */}
-//           {renderErrorMessage("pass")}
-//         </div>
-
-//         <br />
-//         <br />
-
-//         <div  >
-//           {/* <Input type="submit" /> */}
-//           <Button width="100%" bg="#f39" borderRadius="0px" type="submit" > CONTINUE </Button>
-//         </div>
-//       </form>
-//       <br />
-// <br />
-//  <p>------------------------------or------------------------------</p>
-//  <br />
-//  <br />
-//  <Button bg="#4285f4" width="100%" borderRadius="0px" >
-//     <Img  width="30px" marginRight="350px" src="https://th.bing.com/th/id/OIP.Kg2FF2wpIK_HLyo8Q56ycAHaFj?pid=ImgDet&rs=1" />
-//  </Button>
-// <br />
-// <br />
-// <Button alignContent="center" bg="#3b5998" width="100%" borderRadius="0px" >
-//     <Img width="30px" marginRight="350px" src="https://static.nnnow.com/facebook.png" />
-//   </Button>
-//     </div>
-//   );
-
-//   return (
-
-//     <div className="app">
-//       <div >
-//         {isSubmitted ? <div>User is successfully logged in</div> : renderForm}
-//       </div>
-      
-//     </div>
-//   );
-// }
-
-// export default Login;
+import { useEffect, useState } from 'react';
+import {
+  Box,
+  Button,
+  FormControl,
+  FormLabel,
+  Input,
+  InputGroup,
+  InputRightElement,
+  Text,
+  useToast,
+} from '@chakra-ui/react';
+import axios from 'axios';
+import { Link, useNavigate } from 'react-router-dom';
 
 
-import { Button, Img, Input, VStack, Text, Box, useToast } from "@chakra-ui/react";
-import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
-
-function Login() {
-  // React States
-  const [errorMessages, setErrorMessages] = useState({});
-  const [isSubmitted, setIsSubmitted] = useState(false);
-  const navigate = useNavigate()
-  const toast = useToast()
-
-if(isSubmitted === true){
-  toast({
-    title: 'Login Success',
-    description: "User is successfully logged in",
-    status: 'success',
-    duration: 9000,
-    isClosable: true,
-  }) 
-  navigate("/makeup")
+const getUserData = async() => {
+  let res = await fetch("http://localhost:3001/users")
+  let data = await res.json()
+ console.log(data  , "$$$$$$$$$$$")
+  return data
 }
+ 
 
-  // User Login info
-  const database = [
-    {
-      username: "mohite461998@gmail.com",
-      password: "1234"
-    },
-    {
-      username: "user2",
-      password: "pass2"
-    }
-  ];
-
-  const errors = {
-    uname: "Invalid username",
-    pass: "Invalid password"
+const Login = () => {
+  const [showPassword, setShowPassword] = useState(false);
+  const [formData, setFormData] = useState({
+    email: '',
+    password: '',
+  });
+  const [database , setDataBase] = useState([])
+  console.log(database , "&&&&&7777777");
+  const toast = useToast();
+  const navigate = useNavigate()
+  const handleInputChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (event) => {
-    //Prevent page reload
-    event.preventDefault();
+    useEffect(() => {
+    getUserData().then((res) =>{
+      console.log(res , "&******&")
+      setDataBase(res)  
+    }) 
+     },[])
 
-    const { uname, pass } = event.target.elements;
-
-    // Find user login info
-    const userData = database.find((user) => user.username === uname.value);
-
-    // Compare user info
-    if (userData) {
-      if (userData.password !== pass.value) {
-        // Invalid password
-        setErrorMessages({ name: "pass", message: errors.pass });
-      } else {
-        setIsSubmitted(true);
-      }
-    } else {
-      // Username not found
-      setErrorMessages({ name: "uname", message: errors.uname });
-    }
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const foundUser = database.find(user => user.email === formData.email);
+     if(foundUser){
+      toast({
+        title: 'Login Success!',
+        description: `Welcome !`,
+        status: 'success',
+        duration: 5000,
+        isClosable: true,
+      });
+      navigate("/")
+      // console.log("success")
+     }else{
+      console.log("not");
+      toast({
+        title: 'User not found',
+        description: 'Please Signup First!',
+        status: 'warning',
+        duration: 5000,
+        isClosable: true,
+      });
+      navigate("/register")
+     }
+ 
   };
-
-  // Generate JSX code for error message
-  const renderErrorMessage = (name) =>
-    name === errorMessages.name && (
-      <Text color="red.500" fontSize="sm" mt={1}>
-        {errorMessages.message}
-      </Text>
-    );
-
-  // JSX code for login form
-  const renderForm = (
-    <Box as="form" onSubmit={handleSubmit} boxShadow="dark-lg" p={5} >
-      <VStack spacing={4} align="stretch" mt={4}>
-        <Text fontWeight="lighter" fontSize="sm">
-          Enter Your Phone/Email
-        </Text>
-        <Input
-          type="text"
-          name="uname"
-          required
-          borderRadius={0}
-          size="sm"
-        />
-        {renderErrorMessage("uname")}
-        <Text fontWeight="lighter" fontSize="sm">
-          Enter Password
-        </Text>
-        <Input
-          type="password"
-          name="pass"
-          required
-          borderRadius={0}
-          size="sm"
-        />
-        {renderErrorMessage("pass")}
-        <Button type="submit" bg="#f39" borderRadius={0} size="sm">
-          CONTINUE
-        </Button>
-      </VStack>
- <VStack mt={8} spacing={4}>
-        <Text fontWeight="lighter" fontSize="sm">
-          ------------------------------or------------------------------
-        </Text>
-        <Button bg="#4285f4" borderRadius={0}  border="2px solid black" width="95%" >
-          <Img
-            src="https://th.bing.com/th/id/OIP.Kg2FF2wpIK_HLyo8Q56ycAHaFj?pid=ImgDet&rs=1"
-            marginRight={2}
-            boxSize={4}
-          />
-        </Button>
-        <Button bg="#3b5998" borderRadius={0}  border="2px solid black" width="95%">
-          <Img
-            src="https://static.nnnow.com/facebook.png"
-            marginRight={2}
-            boxSize={4}
-          />
-        </Button>
-      </VStack>  
-    </Box>
-  );
 
   return (
-    <VStack p={8} maxW="md" mx="auto" spacing={8}>
-      {isSubmitted ? (
-        //  <Text fontSize="lg">User is successfully logged in</Text>
-        //  toast({
-        //   title: 'Account created.',
-        //   description: "We've created your account for you.",
-        //   status: 'success',
-        //   duration: 9000,
-        //   isClosable: true,
-        // }) 
-        ""
-       
-      ) : (
-        renderForm
-      )}
-    </VStack>
+    <Box w={['90%', '80%', '60%']} mx="auto" mt={10}>
+      <Text fontWeight="bold" fontSize="2xl" mb={4}>
+        Login
+      </Text>
+      <form onSubmit={handleSubmit}>
+         
+        <FormControl id="email" mb={4}>
+          <FormLabel>Email</FormLabel>
+          <Input
+            type="email"
+            name="email"
+            value={formData.email}
+            onChange={handleInputChange}
+            placeholder="Enter your email"
+            borderRadius="0"
+            borderColor="teal.500"
+            focusBorderColor="teal.500"
+            _hover={{ borderColor: 'teal.400' }}
+            required
+          />
+        </FormControl>
+        <FormControl id="password" mb={4}>
+          <FormLabel>Password</FormLabel>
+          <InputGroup>
+            <Input
+              type={showPassword ? 'text' : 'password'}
+              name="password"
+              value={formData.password}
+              onChange={handleInputChange}
+              placeholder="Enter your password"
+              borderRadius="0"
+              borderColor="teal.500"
+              focusBorderColor="teal.500"
+              _hover={{ borderColor: 'teal.400' }}
+              required
+            />
+            <InputRightElement>
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={() => setShowPassword(!showPassword)}
+              >
+                {showPassword ? 'Hide' : 'Show'}
+              </Button>
+            </InputRightElement>
+          </InputGroup>
+        </FormControl>
+        <Button
+          type="submit"
+          colorScheme="teal"
+          size="lg"
+          w="full"
+          mt={8}
+          borderRadius="0"
+          _hover={{ transform: 'translateY(-2px)' }}
+          _active={{ transform: 'translateY(0px)' }}
+        >
+          Log In
+        </Button>
+      </form>
+       <Box margin="auto" textAlign="end" padding="10px 0px 10px 10px" ><Link to="/register" >Go to Signup</Link></Box>
+    </Box>
   );
-}
+};
 
 export default Login;
