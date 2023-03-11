@@ -18,7 +18,7 @@ import { Link, useNavigate } from 'react-router-dom';
 
 
 const getUserData = async() => {
-  let res = await fetch("http://localhost:3001/users")
+  let res = await fetch("https://sephoradatabse.onrender.com/users")
   let data = await res.json()
  console.log(data  , "$$$$$$$$$$$")
   return data

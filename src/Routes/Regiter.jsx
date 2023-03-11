@@ -35,7 +35,7 @@ const Regiter = () => {
         id : Date.now()
      }
 
-     axios.post("http://localhost:3001/users" , payload)
+     axios.post("https://sephoradatabse.onrender.com/users" , payload)
      .then((res) =>{
       console.log(res)
      toast({
