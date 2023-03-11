@@ -1,3 +1,33 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Application UI</title>
+</head>
+<body>
+ <h1>Login Page Full Screen</h1>
+  <img src="https://i.imgur.com/ZV1152K.png"  alt="homepage" />
+   <br />
+    <h1>Login Page Small Screen</h1>
+  <img src="https://i.imgur.com/lsbY10r.png"  alt="homepage" />
+   <br />
+ <h1>Home Page</h1>
+  <img src="https://i.imgur.com/jJyxLmA.png"  alt="homepage" />
+ <br />
+  <h1>Makeup Page</h1>
+  <img src="https://i.imgur.com/A1ueJpp.png"  alt="userdetailspage" />
+ <br />
+ <h2>Product Details/Single Product Page</h2>
+  <img src="https://i.imgur.com/dKF564S.png"  alt="homepage" />
+ <br />
+  <h2>Cart Page</h2>
+  <img src="https://i.imgur.com/oc9RL5B.png"  alt="userdetailspage" />
+</body>
+</html>
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
