@@ -31,7 +31,7 @@
 //         <Flex key={item.id} alignItems="center" mb={2}>
 //            <Img margin="auto" src={item.heroImage} />
 //           <Text>{item.displayName}</Text>
-//           <Box ml="auto" fontWeight="bold">${item.moreColors.toFixed(2)}</Box>
+//           <Box ml="auto" fontWeight="bold">${item.price.toFixed(2)}</Box>
 //         </Flex>
 //       ))}
 //       <Flex alignItems="center" justifyContent="space-between" mt={4}>
@@ -135,7 +135,7 @@ const Cart = () => {
 
   let total = 0;
   for (let i = 0; i < cartData.length; i++) {
-    total += cartData[i].moreColors * cartData[i].count;
+    total += cartData[i].price * cartData[i].count;
     console.log(total);
   }
   let discount = Math.floor((total / 100) * 10);
@@ -213,7 +213,7 @@ const Cart = () => {
                   //  border="2px solid red"
                   width="240px"
                 >
-                  <p style={{ textAlign: "left" }}>Price: ${elem.moreColors}</p>
+                  <p style={{ textAlign: "left" }}>Price: ${elem.price}</p>
 
                   <Box display="flex" justifyContent="space-evenly">
                     <Button

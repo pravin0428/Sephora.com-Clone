@@ -42,12 +42,14 @@
   font-weight: bold;
   text-decoration: none;
   padding: 10px;
+  color: white;
 }
 .navCategotybtn:hover {
   color: #fa23a4;
   font-weight: bold;
   text-decoration: none;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(248, 248, 246, 0.35) 0px 5px 15px;
+  padding: 10px;
 }
 
 /* 5th row */
@@ -150,6 +152,7 @@
     box-shadow: 0px 8px 16px 0px rgba(247, 2, 2, 0.2);
     z-index: 1;
     margin-left: 200px;
+    border: 2px solid red;
   }
 
   /* @media only screen and (max-width: 470px) {

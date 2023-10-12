@@ -12,6 +12,7 @@ import HaireCare from "./HaireCare"
 import Brand from "./Brand"
 import SingleProduct from "./SingleProduct"
 import Cart from "./Cart"
+import PrivateRoute from "../Components/PrivateRoute"
 function AllRoutes() {
   return (
      <Routes>
@@ -26,8 +27,9 @@ function AllRoutes() {
         <Route path="/toolAndBrushes" element={<ToolAndBrushes/>} />
         <Route path="/hairCare" element={<HaireCare/>} />
         <Route path="/brand" element={<Brand/>} />
-          <Route path="/cart" element={<Cart/>} />  
-        <Route path="/makeup/:id" element={<SingleProduct/>} />
+        <Route path="/cart" element={<PrivateRoute><Cart/></PrivateRoute>} />  
+        <Route path="/makeup/:category/:id" element={<SingleProduct/>} />
+        <Route path="/skincare/:category/:id" element={<SingleProduct/>} />
      </Routes>
   )
 }

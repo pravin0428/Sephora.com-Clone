@@ -22,8 +22,8 @@ import { useEffect, useState } from 'react';
   import { MdLocalShipping } from 'react-icons/md';
 import { useNavigate, useParams } from 'react-router-dom';
 import axios from "axios"
-async function getData(id) {
-    let res = await fetch(`https://sephoradatabse.onrender.com/makeup/${id}`)
+async function getData(category , id) {
+    let res = await fetch(`https://sephoradatabse.onrender.com/${category}/${id}`)
     console.log(res);
     let data = await res.json()
     return data
@@ -42,7 +42,9 @@ async function getCartData() {
     const [data , setData] = useState({})
     // const[addCount , setAddCount] = useState(null)
     const[ cartData , setCartData] = useState([])
-    const {id} = useParams()
+    // const {cate , id} = useParams()
+    const { category, id } = useParams();
+    console.log(category , id , "+++11+++")
     const toast = useToast()
     const navigate = useNavigate()
 // console.log(data.currentSku.badgeAltText);
@@ -50,7 +52,7 @@ async function getCartData() {
     console.log(id)
 
     useEffect(() => {
-        getData(id).then((res) => {
+        getData(category , id).then((res) => {
             console.log(res)
             setData(res)
         })
@@ -106,7 +108,7 @@ async function getCartData() {
             //   rounded={'md'}
               alt={'product image'}
               src={
-                 data.image450
+                 data.heroImage
               }
               fit={'cover'}
               align={'center'}
@@ -127,7 +129,7 @@ async function getCartData() {
                 fontWeight={300}
                 fontSize={'2xl'}>
                  {/* ${data.currentSku.listPrice} USD   */}
-                 {`$ ${data.moreColors} USD`} 
+                 {`$ ${data.price} USD`} 
               </Text>
             </Box>
   

@@ -1,7 +1,7 @@
  
 
 
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import {
   Box,
   Button,
@@ -15,6 +15,7 @@ import {
 } from '@chakra-ui/react';
 import axios from 'axios';
 import { Link, useNavigate } from 'react-router-dom';
+import { AppContext } from '../Context/AppContext';
 
 
 const getUserData = async() => {
@@ -27,6 +28,7 @@ const getUserData = async() => {
 
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
+  const {isAuth , loginUser , getmobNo , logout} = useContext(AppContext)
   const [formData, setFormData] = useState({
     email: '',
     password: '',
@@ -57,10 +59,12 @@ const Login = () => {
         duration: 5000,
         isClosable: true,
       });
+      loginUser(true)
       navigate("/")
       // console.log("success")
      }else{
       console.log("not");
+      loginUser(false)
       toast({
         title: 'User not found',
         description: 'Please Signup First!',
