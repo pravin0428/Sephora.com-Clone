@@ -77,7 +77,7 @@ function Makeup() {
   useEffect(() => {
     setLoading(true);
     fetch(
-      `https://sephoradatabse.onrender.com/makeup?_sort=moreColors&_order=${sortorder}`
+      `https://sephoradatabse.onrender.com/makeup?_sort=price&_order=${sortorder}`
     )
       .then((res) => res.json())
       //   fetch(`https://database-pravin.herokuapp.com/makeup`).then((res) => res.json())
@@ -91,7 +91,7 @@ function Makeup() {
         console.log(err);
         setLoading(false);
       });
-  }, [sortorder]);
+  }, [sortorder]); 
 
   return (
     <>
